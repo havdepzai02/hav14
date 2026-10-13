@@ -285,11 +285,6 @@ TWEEN.Interpolation = {
 };
 
 
-/**
- * @author Eberhard Graether / http://egraether.com/
- * @author Mark Lundin 	/ http://mark-lundin.com
- */
-
 THREE.TrackballControls = function ( object, domElement ) {
 
 	var _this = this;
@@ -297,8 +292,6 @@ THREE.TrackballControls = function ( object, domElement ) {
 
 	this.object = object;
 	this.domElement = ( domElement !== undefined ) ? domElement : document;
-
-	// API
 
 	this.enabled = true;
 
@@ -319,9 +312,7 @@ THREE.TrackballControls = function ( object, domElement ) {
 	this.minDistance = 0;
 	this.maxDistance = Infinity;
 
-	this.keys = [ 65 /*A*/, 83 /*S*/, 68 /*D*/ ];
-
-	// internals
+	this.keys = [ 65, 83, 68 ];
 
 	this.target = new THREE.Vector3();
 
@@ -346,20 +337,13 @@ THREE.TrackballControls = function ( object, domElement ) {
 	_panStart = new THREE.Vector2(),
 	_panEnd = new THREE.Vector2();
 
-	// for reset
-
 	this.target0 = this.target.clone();
 	this.position0 = this.object.position.clone();
 	this.up0 = this.object.up.clone();
 
-	// events
-
 	var changeEvent = { type: 'change' };
 	var startEvent = { type: 'start'};
 	var endEvent = { type: 'end'};
-
-
-	// methods
 
 	this.handleResize = function () {
 
@@ -373,7 +357,6 @@ THREE.TrackballControls = function ( object, domElement ) {
 		} else {
 
 			var box = this.domElement.getBoundingClientRect();
-			// adjustments come from similar code in the jquery offset() function
 			var d = this.domElement.ownerDocument.documentElement;
 			this.screen.left = box.left + window.pageXOffset - d.clientLeft;
 			this.screen.top = box.top + window.pageYOffset - d.clientTop;
@@ -635,8 +618,6 @@ THREE.TrackballControls = function ( object, domElement ) {
 
 	};
 
-	// listeners
-
 	function keydown( event ) {
 
 		if ( _this.enabled === false ) return;
@@ -759,11 +740,11 @@ THREE.TrackballControls = function ( object, domElement ) {
 
 		var delta = 0;
 
-		if ( event.wheelDelta ) { // WebKit / Opera / Explorer 9
+		if ( event.wheelDelta ) {
 
 			delta = event.wheelDelta / 40;
 
-		} else if ( event.detail ) { // Firefox
+		} else if ( event.detail ) {
 
 			delta = - event.detail / 3;
 
@@ -867,7 +848,7 @@ THREE.TrackballControls = function ( object, domElement ) {
 	this.domElement.addEventListener( 'mousedown', mousedown, false );
 
 	this.domElement.addEventListener( 'mousewheel', mousewheel, false );
-	this.domElement.addEventListener( 'DOMMouseScroll', mousewheel, false ); // firefox
+	this.domElement.addEventListener( 'DOMMouseScroll', mousewheel, false );
 
 	this.domElement.addEventListener( 'touchstart', touchstart, false );
 	this.domElement.addEventListener( 'touchend', touchend, false );
@@ -878,17 +859,11 @@ THREE.TrackballControls = function ( object, domElement ) {
 
 	this.handleResize();
 
-	// force an update at start
 	this.update();
 
 };
 
 THREE.TrackballControls.prototype = Object.create( THREE.EventDispatcher.prototype );
-
-/**
- * Based on http://www.emagix.net/academic/mscs-project/item/camera-sync-with-css3-and-webgl-threejs
- * @author mrdoob / http://mrdoob.com/
- */
 
 THREE.CSS3DObject = function ( element ) {
 
@@ -925,11 +900,7 @@ THREE.CSS3DSprite = function ( element ) {
 
 THREE.CSS3DSprite.prototype = Object.create( THREE.CSS3DObject.prototype );
 
-//
-
 THREE.CSS3DRenderer = function () {
-
-	console.log( 'THREE.CSS3DRenderer', THREE.REVISION );
 
 	var _width, _height;
 	var _widthHalf, _heightHalf;
@@ -955,9 +926,7 @@ THREE.CSS3DRenderer = function () {
 
 	domElement.appendChild( cameraElement );
 
-	this.setClearColor = function () {
-
-	};
+	this.setClearColor = function () {};
 
 	this.setSize = function ( width, height ) {
 
@@ -1038,8 +1007,6 @@ THREE.CSS3DRenderer = function () {
 			var style;
 
 			if ( object instanceof THREE.CSS3DSprite ) {
-
-				// http://swiftcoder.wordpress.com/2008/11/25/constructing-a-billboard-matrix/
 
 				matrix.copy( camera.matrixWorldInverse );
 				matrix.transpose();
@@ -1264,25 +1231,25 @@ var categoryColors = {
 	"kim loại yếu": "#6fcf97",
 	"á kim": "#27ae60",
 	"phi kim": "#56ccf2",
-	"khí hiếm": "#9b51e0",
 	"halogen": "#eb5757",
-	"lanthanide": "#f2994a",
-	"actinide": "#bb6bd9",
+	"khí hiếm": "#9b51e0",
+	"lantan": "#bb6bd9",
+	"actini": "#a8324a",
 	"không rõ": "#6c7a89"
 };
 
 var categoryNames = {
-	"kim loại kiềm": "Kim loại kiềm",
-	"kim loại kiềm thổ": "Kim loại kiềm thổ",
-	"kim loại chuyển tiếp": "Kim loại chuyển tiếp",
-	"kim loại yếu": "Kim loại yếu",
-	"á kim": "Á kim",
-	"phi kim": "Phi kim",
-	"khí hiếm": "Khí hiếm",
-	"halogen": "Halogen",
-	"lanthanide": "Lanthanide",
-	"actinide": "Actinide",
-	"không rõ": "Không rõ"
+	"kim loại kiềm": "KIM LOẠI KIỀM",
+	"kim loại kiềm thổ": "KIM LOẠI KIỀM THỔ",
+	"kim loại chuyển tiếp": "KIM LOẠI CHUYỂN TIẾP",
+	"kim loại yếu": "KIM LOẠI YẾU",
+	"á kim": "Á KIM",
+	"phi kim": "PHI KIM",
+	"halogen": "HALOGEN",
+	"khí hiếm": "KHÍ HIẾM",
+	"lantan": "HỌ LANTAN",
+	"actini": "HỌ ACTINI",
+	"không rõ": "CHƯA RÕ TÍNH CHẤT"
 };
 
 var elementCategories = [
@@ -1302,15 +1269,15 @@ var elementCategories = [
 	"kim loại chuyển tiếp", "kim loại chuyển tiếp", "kim loại chuyển tiếp",
 	"kim loại yếu", "kim loại yếu", "kim loại yếu", "á kim", "á kim", "halogen", "khí hiếm",
 	"kim loại kiềm", "kim loại kiềm thổ",
-	"lanthanide", "lanthanide", "lanthanide", "lanthanide", "lanthanide", "lanthanide", "lanthanide",
-	"lanthanide", "lanthanide", "lanthanide", "lanthanide", "lanthanide", "lanthanide", "lanthanide",
+	"lantan", "lantan", "lantan", "lantan", "lantan", "lantan", "lantan",
+	"lantan", "lantan", "lantan", "lantan", "lantan", "lantan", "lantan",
 	"kim loại chuyển tiếp", "kim loại chuyển tiếp", "kim loại chuyển tiếp", "kim loại chuyển tiếp",
 	"kim loại chuyển tiếp", "kim loại chuyển tiếp", "kim loại chuyển tiếp", "kim loại chuyển tiếp",
 	"kim loại chuyển tiếp", "kim loại yếu", "kim loại yếu", "kim loại yếu", "kim loại yếu",
 	"á kim", "halogen", "khí hiếm",
 	"kim loại kiềm", "kim loại kiềm thổ",
-	"actinide", "actinide", "actinide", "actinide", "actinide", "actinide", "actinide", "actinide",
-	"actinide", "actinide", "actinide", "actinide", "actinide", "actinide", "actinide",
+	"actini", "actini", "actini", "actini", "actini", "actini", "actini",
+	"actini", "actini", "actini", "actini", "actini", "actini", "actini",
 	"kim loại chuyển tiếp", "kim loại chuyển tiếp", "kim loại chuyển tiếp", "kim loại chuyển tiếp",
 	"kim loại chuyển tiếp", "kim loại chuyển tiếp", "kim loại chuyển tiếp", "kim loại chuyển tiếp",
 	"kim loại chuyển tiếp", "kim loại yếu", "kim loại yếu", "kim loại yếu", "kim loại yếu",
@@ -1321,6 +1288,36 @@ var groupRoman = {
 	1: "IA", 2: "IIA", 3: "IIIB", 4: "IVB", 5: "VB", 6: "VIB", 7: "VIIB",
 	8: "VIIIB", 9: "VIIIB", 10: "VIIIB", 11: "IB", 12: "IIB",
 	13: "IIIA", 14: "IVA", 15: "VA", 16: "VIA", 17: "VIIA", 18: "VIIIA"
+};
+
+var elementExtra = {
+	"H": { melt: "-259 °C", boil: "-253 °C", val: "-1, +1", en: "2.20", config: "1s¹", radius: "53 pm", ie: "1312 kJ/mol" },
+	"He": { melt: "-272 °C", boil: "-269 °C", val: "0", en: "—", config: "1s²", radius: "31 pm", ie: "2372 kJ/mol" },
+	"Li": { melt: "181 °C", boil: "1342 °C", val: "+1", en: "0.98", config: "[He] 2s¹", radius: "152 pm", ie: "520 kJ/mol" },
+	"Be": { melt: "1287 °C", boil: "2469 °C", val: "+2", en: "1.57", config: "[He] 2s²", radius: "112 pm", ie: "899 kJ/mol" },
+	"B": { melt: "2076 °C", boil: "3927 °C", val: "+3", en: "2.04", config: "[He] 2s² 2p¹", radius: "87 pm", ie: "801 kJ/mol" },
+	"C": { melt: "3550 °C", boil: "4027 °C", val: "-4, +2, +4", en: "2.55", config: "[He] 2s² 2p²", radius: "67 pm", ie: "1086 kJ/mol" },
+	"N": { melt: "-210 °C", boil: "-196 °C", val: "-3, +3, +5", en: "3.04", config: "[He] 2s² 2p³", radius: "56 pm", ie: "1402 kJ/mol" },
+	"O": { melt: "-218 °C", boil: "-183 °C", val: "-2", en: "3.44", config: "[He] 2s² 2p⁴", radius: "48 pm", ie: "1314 kJ/mol" },
+	"F": { melt: "-220 °C", boil: "-188 °C", val: "-1", en: "3.98", config: "[He] 2s² 2p⁵", radius: "42 pm", ie: "1681 kJ/mol" },
+	"Ne": { melt: "-249 °C", boil: "-246 °C", val: "0", en: "—", config: "[He] 2s² 2p⁶", radius: "38 pm", ie: "2081 kJ/mol" },
+	"Na": { melt: "98 °C", boil: "883 °C", val: "+1", en: "0.93", config: "[Ne] 3s¹", radius: "186 pm", ie: "496 kJ/mol" },
+	"Mg": { melt: "650 °C", boil: "1090 °C", val: "+2", en: "1.31", config: "[Ne] 3s²", radius: "160 pm", ie: "738 kJ/mol" },
+	"Al": { melt: "660 °C", boil: "2519 °C", val: "+3", en: "1.61", config: "[Ne] 3s² 3p¹", radius: "143 pm", ie: "578 kJ/mol" },
+	"Si": { melt: "1414 °C", boil: "3265 °C", val: "-4, +4", en: "1.90", config: "[Ne] 3s² 3p²", radius: "117 pm", ie: "786 kJ/mol" },
+	"P": { melt: "44 °C", boil: "280 °C", val: "-3, +3, +5", en: "2.19", config: "[Ne] 3s² 3p³", radius: "110 pm", ie: "1012 kJ/mol" },
+	"S": { melt: "115 °C", boil: "444 °C", val: "-2, +4, +6", en: "2.58", config: "[Ne] 3s² 3p⁴", radius: "104 pm", ie: "1000 kJ/mol" },
+	"Cl": { melt: "-101 °C", boil: "-34 °C", val: "-1, +1, +5, +7", en: "3.16", config: "[Ne] 3s² 3p⁵", radius: "99 pm", ie: "1251 kJ/mol" },
+	"Ar": { melt: "-189 °C", boil: "-186 °C", val: "0", en: "—", config: "[Ne] 3s² 3p⁶", radius: "71 pm", ie: "1521 kJ/mol" },
+	"K": { melt: "63 °C", boil: "759 °C", val: "+1", en: "0.82", config: "[Ar] 4s¹", radius: "227 pm", ie: "419 kJ/mol" },
+	"Ca": { melt: "842 °C", boil: "1484 °C", val: "+2", en: "1.00", config: "[Ar] 4s²", radius: "197 pm", ie: "590 kJ/mol" },
+	"Fe": { melt: "1538 °C", boil: "2861 °C", val: "+2, +3", en: "1.83", config: "[Ar] 3d⁶ 4s²", radius: "126 pm", ie: "762 kJ/mol" },
+	"Cu": { melt: "1085 °C", boil: "2562 °C", val: "+1, +2", en: "1.90", config: "[Ar] 3d¹⁰ 4s¹", radius: "128 pm", ie: "745 kJ/mol" },
+	"Zn": { melt: "420 °C", boil: "907 °C", val: "+2", en: "1.65", config: "[Ar] 3d¹⁰ 4s²", radius: "134 pm", ie: "906 kJ/mol" },
+	"Ag": { melt: "962 °C", boil: "2162 °C", val: "+1", en: "1.93", config: "[Kr] 4d¹⁰ 5s¹", radius: "144 pm", ie: "731 kJ/mol" },
+	"Au": { melt: "1064 °C", boil: "2856 °C", val: "+1, +3", en: "2.54", config: "[Xe] 4f¹⁴ 5d¹⁰ 6s¹", radius: "144 pm", ie: "890 kJ/mol" },
+	"Hg": { melt: "-39 °C", boil: "357 °C", val: "+1, +2", en: "2.00", config: "[Xe] 4f¹⁴ 5d¹⁰ 6s²", radius: "151 pm", ie: "1007 kJ/mol" },
+	"U": { melt: "1132 °C", boil: "4131 °C", val: "+3, +4, +5, +6", en: "1.38", config: "[Rn] 5f³ 6d¹ 7s²", radius: "156 pm", ie: "598 kJ/mol" }
 };
 
 var camera, scene, renderer;
@@ -1360,7 +1357,7 @@ function init() {
 
 		var details = document.createElement( 'div' );
 		details.className = 'details';
-		details.innerHTML = table[ i + 1 ] + '<br>' + table[ i + 2 ];
+		details.innerHTML = nameVi[ table[ i + 1 ] ] || table[ i + 1 ];
 		element.appendChild( details );
 
 		( function( data ) {
@@ -1372,10 +1369,11 @@ function init() {
 			symbol: table[ i ],
 			name: nameVi[ table[ i + 1 ] ] || table[ i + 1 ],
 			latin: table[ i + 1 ],
-			mass: table[ i + 2 ],
+			mass: table[ i + 2 ].replace('#', ''),
 			group: table[ i + 3 ],
 			period: table[ i + 4 ],
-			category: cat
+			category: cat,
+			extra: elementExtra[ table[ i ] ] || null
 		} );
 
 		var object = new THREE.CSS3DObject( element );
@@ -1459,23 +1457,19 @@ function init() {
 	controls.maxDistance = 6000;
 	controls.addEventListener( 'change', render );
 
-	var button = document.getElementById( 'table' );
-	button.addEventListener( 'click', function ( event ) {
+	document.getElementById( 'table' ).addEventListener( 'click', function () {
 		transform( targets.table, 2000 );
 	}, false );
 
-	var button = document.getElementById( 'sphere' );
-	button.addEventListener( 'click', function ( event ) {
+	document.getElementById( 'sphere' ).addEventListener( 'click', function () {
 		transform( targets.sphere, 2000 );
 	}, false );
 
-	var button = document.getElementById( 'helix' );
-	button.addEventListener( 'click', function ( event ) {
+	document.getElementById( 'helix' ).addEventListener( 'click', function () {
 		transform( targets.helix, 2000 );
 	}, false );
 
-	var button = document.getElementById( 'grid' );
-	button.addEventListener( 'click', function ( event ) {
+	document.getElementById( 'grid' ).addEventListener( 'click', function () {
 		transform( targets.grid, 2000 );
 	}, false );
 
@@ -1497,21 +1491,26 @@ function init() {
 
 function showPopup( data ) {
 
-	document.getElementById( 'popup-number' ).textContent = 'Số hiệu: ' + data.number;
 	document.getElementById( 'popup-symbol' ).textContent = data.symbol;
-	document.getElementById( 'popup-name' ).textContent = data.name;
-	document.getElementById( 'popup-latin' ).textContent = data.latin;
-	document.getElementById( 'popup-mass' ).textContent = data.mass;
+	document.getElementById( 'popup-name' ).textContent = data.name + ' (' + data.latin + ')';
+	document.getElementById( 'popup-mass' ).textContent = data.mass + ' u';
 
 	var groupText = groupRoman[ data.group ] || data.group;
-	document.getElementById( 'popup-group' ).textContent = groupText + ' (' + data.group + ')';
+	document.getElementById( 'popup-group' ).textContent = groupText;
 	document.getElementById( 'popup-period' ).textContent = data.period;
 
-	var catBadge = document.getElementById( 'popup-category-badge' );
+	var catBadge = document.getElementById( 'popup-category' );
 	catBadge.textContent = categoryNames[ data.category ];
 	catBadge.style.backgroundColor = categoryColors[ data.category ];
 
-	document.getElementById( 'popup-type' ).textContent = categoryNames[ data.category ];
+	var ex = data.extra || { melt: '—', boil: '—', val: '—', en: '—', config: '—', radius: '—', ie: '—' };
+	document.getElementById( 'popup-melt' ).textContent = ex.melt;
+	document.getElementById( 'popup-boil' ).textContent = ex.boil;
+	document.getElementById( 'popup-val' ).textContent = ex.val;
+	document.getElementById( 'popup-en' ).textContent = ex.en;
+	document.getElementById( 'popup-config' ).textContent = ex.config;
+	document.getElementById( 'popup-radius' ).textContent = ex.radius;
+	document.getElementById( 'popup-ie' ).textContent = ex.ie;
 
 	document.getElementById( 'popup' ).classList.add( 'show' );
 
