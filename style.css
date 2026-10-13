@@ -1,0 +1,279 @@
+* {
+	box-sizing: border-box;
+}
+
+html, body {
+	height: 100%;
+}
+
+body {
+	background: radial-gradient(ellipse at center, #0a1420 0%, #000000 70%);
+	margin: 0;
+	font-family: 'Segoe UI', Helvetica, Arial, sans-serif;
+	overflow: hidden;
+	color: #fff;
+}
+
+#info {
+	position: absolute;
+	top: 0;
+	width: 100%;
+	color: rgba(200, 240, 255, 0.9);
+	padding: 12px;
+	font-size: 14px;
+	font-weight: 600;
+	letter-spacing: 2px;
+	text-align: center;
+	text-transform: uppercase;
+	z-index: 1;
+	text-shadow: 0 0 12px rgba(0, 255, 255, 0.6);
+}
+
+#menu {
+	position: absolute;
+	bottom: 28px;
+	width: 100%;
+	text-align: center;
+	z-index: 5;
+}
+
+#menu button {
+	color: rgba(200, 240, 255, 0.85);
+	background: rgba(0, 30, 40, 0.55);
+	backdrop-filter: blur(8px);
+	-webkit-backdrop-filter: blur(8px);
+	border: 1px solid rgba(0, 220, 255, 0.35);
+	border-radius: 24px;
+	padding: 9px 22px;
+	margin: 0 6px;
+	cursor: pointer;
+	font-size: 13px;
+	font-weight: 600;
+	letter-spacing: 1px;
+	transition: all 0.25s ease;
+	box-shadow: 0 0 12px rgba(0, 220, 255, 0.15);
+}
+
+#menu button:hover {
+	color: #fff;
+	border-color: rgba(0, 255, 255, 0.9);
+	box-shadow: 0 0 22px rgba(0, 255, 255, 0.55);
+	transform: translateY(-2px);
+}
+
+#menu button:active {
+	transform: translateY(0);
+	background: rgba(0, 255, 255, 0.2);
+}
+
+.element {
+	width: 120px;
+	height: 160px;
+	text-align: center;
+	cursor: pointer;
+	border-radius: 8px;
+	border: 1px solid rgba(255, 255, 255, 0.25);
+	box-shadow:
+		0 0 12px rgba(0, 0, 0, 0.6),
+		inset 0 0 20px rgba(255, 255, 255, 0.08);
+	transition: all 0.25s ease;
+	position: relative;
+	overflow: hidden;
+}
+
+.element::before {
+	content: '';
+	position: absolute;
+	inset: 0;
+	background: linear-gradient(160deg, rgba(255,255,255,0.22) 0%, rgba(255,255,255,0) 45%, rgba(0,0,0,0.25) 100%);
+	pointer-events: none;
+}
+
+.element:hover {
+	transform: scale(1.06);
+	border-color: rgba(255, 255, 255, 0.95);
+	box-shadow:
+		0 0 26px rgba(255, 255, 255, 0.55),
+		inset 0 0 30px rgba(255, 255, 255, 0.18);
+}
+
+.element .number {
+	position: absolute;
+	top: 12px;
+	right: 14px;
+	font-size: 13px;
+	font-weight: 600;
+	color: rgba(255, 255, 255, 0.95);
+	text-shadow: 0 1px 3px rgba(0, 0, 0, 0.9);
+}
+
+.element .symbol {
+	position: absolute;
+	top: 44px;
+	left: 0;
+	right: 0;
+	font-size: 54px;
+	font-weight: 800;
+	color: #ffffff;
+	text-shadow: 0 2px 10px rgba(0, 0, 0, 0.75);
+	letter-spacing: -1px;
+	line-height: 1;
+}
+
+.element .details {
+	position: absolute;
+	bottom: 12px;
+	left: 6px;
+	right: 6px;
+	font-size: 10px;
+	line-height: 1.35;
+	color: rgba(255, 255, 255, 0.95);
+	text-shadow: 0 1px 3px rgba(0, 0, 0, 0.9);
+	font-weight: 500;
+}
+
+/* ============ POPUP ============ */
+
+#popup {
+	position: fixed;
+	inset: 0;
+	display: none;
+	justify-content: center;
+	align-items: center;
+	z-index: 100;
+	background: rgba(0, 0, 0, 0.65);
+	backdrop-filter: blur(6px);
+	-webkit-backdrop-filter: blur(6px);
+	animation: fadeIn 0.25s ease;
+}
+
+#popup.show {
+	display: flex;
+}
+
+@keyframes fadeIn {
+	from { opacity: 0; }
+	to { opacity: 1; }
+}
+
+@keyframes popIn {
+	from { transform: scale(0.85); opacity: 0; }
+	to { transform: scale(1); opacity: 1; }
+}
+
+#popup-card {
+	width: 380px;
+	background: linear-gradient(160deg, #0e1c28 0%, #050a10 100%);
+	border-radius: 16px;
+	overflow: hidden;
+	position: relative;
+	box-shadow:
+		0 30px 80px rgba(0, 0, 0, 0.85),
+		0 0 0 1px rgba(0, 255, 255, 0.35),
+		0 0 60px rgba(0, 255, 255, 0.25);
+	animation: popIn 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+#popup-head {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 14px 20px;
+	background: rgba(0, 0, 0, 0.35);
+	border-bottom: 1px solid rgba(0, 255, 255, 0.2);
+}
+
+#popup-number {
+	font-size: 14px;
+	font-weight: 700;
+	color: rgba(200, 240, 255, 0.9);
+	letter-spacing: 1px;
+}
+
+#popup-category-badge {
+	font-size: 11px;
+	font-weight: 700;
+	padding: 4px 12px;
+	border-radius: 12px;
+	color: #0a0a0a;
+	letter-spacing: 0.5px;
+}
+
+#popup-symbol {
+	font-size: 96px;
+	font-weight: 800;
+	text-align: center;
+	line-height: 1;
+	margin-top: 18px;
+	color: #fff;
+	text-shadow: 0 0 30px rgba(0, 255, 255, 0.7);
+	letter-spacing: -2px;
+}
+
+#popup-name {
+	font-size: 26px;
+	font-weight: 700;
+	text-align: center;
+	margin-top: 8px;
+	color: rgba(200, 240, 255, 1);
+}
+
+#popup-latin {
+	font-size: 14px;
+	text-align: center;
+	color: rgba(160, 200, 220, 0.75);
+	font-style: italic;
+	margin-top: 2px;
+	margin-bottom: 20px;
+}
+
+#popup-grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 10px;
+	padding: 0 20px 20px;
+}
+
+.popup-cell {
+	background: rgba(0, 40, 55, 0.55);
+	border: 1px solid rgba(0, 220, 255, 0.22);
+	border-radius: 10px;
+	padding: 12px 10px;
+	text-align: center;
+}
+
+.popup-cell-label {
+	font-size: 10px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	color: rgba(160, 220, 240, 0.7);
+	margin-bottom: 6px;
+	font-weight: 600;
+}
+
+.popup-cell-value {
+	font-size: 18px;
+	font-weight: 700;
+	color: #fff;
+	text-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+}
+
+#popup-close {
+	position: absolute;
+	top: 10px;
+	right: 14px;
+	font-size: 24px;
+	color: rgba(200, 240, 255, 0.7);
+	background: transparent;
+	border: none;
+	cursor: pointer;
+	line-height: 1;
+	z-index: 2;
+	padding: 0;
+	transition: color 0.2s;
+}
+
+#popup-close:hover {
+	color: #fff;
+	text-shadow: 0 0 12px rgba(0, 255, 255, 1);
+}
