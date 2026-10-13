@@ -7,43 +7,62 @@
 </head>
 <body>
 <div id="container"></div>
-<div id="info">Bảng Tuần Hoàn Hóa Học 3D ·</div>
+<div id="info">Bảng Tuần Hoàn Hóa Học</div>
 <div id="menu">
 <button id="table">Bảng</button>
 <button id="sphere">Cầu</button>
 <button id="helix">Xoắn ốc</button>
 <button id="grid">Lưới</button>
 </div>
+
+<div id="legend">
+  <div class="legend-item"><span class="legend-dot" style="background:#e8556d"></span>Kim loại kiềm</div>
+  <div class="legend-item"><span class="legend-dot" style="background:#f2994a"></span>Kim loại kiềm thổ</div>
+  <div class="legend-item"><span class="legend-dot" style="background:#f2c94c"></span>Kim loại chuyển tiếp</div>
+  <div class="legend-item"><span class="legend-dot" style="background:#6fcf97"></span>Kim loại yếu</div>
+  <div class="legend-item"><span class="legend-dot" style="background:#27ae60"></span>Á kim</div>
+  <div class="legend-item"><span class="legend-dot" style="background:#56ccf2"></span>Phi kim</div>
+  <div class="legend-item"><span class="legend-dot" style="background:#eb5757"></span>Halogen</div>
+  <div class="legend-item"><span class="legend-dot" style="background:#9b51e0"></span>Khí hiếm</div>
+  <div class="legend-item"><span class="legend-dot" style="background:#bb6bd9"></span>Lantan</div>
+  <div class="legend-item"><span class="legend-dot" style="background:#a8324a"></span>Actini</div>
+</div>
+
 <div id="popup">
   <div id="popup-card">
     <button id="popup-close">×</button>
-    <div id="popup-head">
-      <div id="popup-number">1</div>
-      <div id="popup-category-badge">Phi kim</div>
+
+    <div id="popup-header">
+      <div id="popup-symbol-box">
+        <div id="popup-symbol">H</div>
+      </div>
+      <div id="popup-header-text">
+        <div id="popup-name">Hydro</div>
+        <div id="popup-category">PHI KIM</div>
+      </div>
     </div>
-    <div id="popup-symbol">H</div>
-    <div id="popup-name">Hydro</div>
-    <div id="popup-latin">Hydrogen</div>
-    <div id="popup-grid">
-      <div class="popup-cell">
-        <div class="popup-cell-label">Khối lượng</div>
-        <div class="popup-cell-value" id="popup-mass">1.008</div>
+
+    <div id="popup-body">
+      <div class="popup-col">
+        <div class="popup-col-title">📋 THÔNG TIN CƠ BẢN</div>
+        <div class="popup-row"><span>Khối lượng</span><b id="popup-mass">1.008 u</b></div>
+        <div class="popup-row"><span>Điểm nóng chảy</span><b id="popup-melt">-259 °C</b></div>
+        <div class="popup-row"><span>Điểm sôi</span><b id="popup-boil">-253 °C</b></div>
+        <div class="popup-row"><span>Nhóm</span><b id="popup-group">IA</b></div>
+        <div class="popup-row"><span>Chu kỳ</span><b id="popup-period">1</b></div>
       </div>
-      <div class="popup-cell">
-        <div class="popup-cell-label">Nhóm</div>
-        <div class="popup-cell-value" id="popup-group">IA</div>
-      </div>
-      <div class="popup-cell">
-        <div class="popup-cell-label">Chu kỳ</div>
-        <div class="popup-cell-value" id="popup-period">1</div>
-      </div>
-      <div class="popup-cell">
-        <div class="popup-cell-label">Phân loại</div>
-        <div class="popup-cell-value" id="popup-type">Phi kim</div>
+      <div class="popup-col">
+        <div class="popup-col-title">⚗️ TÍNH CHẤT HÓA HỌC</div>
+        <div class="popup-row"><span>Hóa trị</span><b id="popup-val">-1, +1</b></div>
+        <div class="popup-row"><span>Độ âm điện</span><b id="popup-en">2.20</b></div>
+        <div class="popup-row"><span>Cấu hình e</span><b id="popup-config">1s¹</b></div>
+        <div class="popup-row"><span>Bán kính</span><b id="popup-radius">53 pm</b></div>
+        <div class="popup-row"><span>Năng lượng ion hóa</span><b id="popup-ie">1312 kJ/mol</b></div>
       </div>
     </div>
   </div>
 </div>
+
   <script src='https://cdnjs.cloudflare.com/ajax/libs/three.js/r67/three.min.js'></script><script  src="./script.js"></script>
 </body>
 </html>
