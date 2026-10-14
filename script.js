@@ -1080,124 +1080,124 @@ THREE.CSS3DRenderer = function () {
 
 
 var table = [
-	"H", "Hydrogen", "1.008", 1, 1, "1s1", 2.20, "-259.16 °C", "-252.87 °C", "53 pm", "1312 kJ/mol", "Nguyên tố nhẹ nhất và nhiều nhất vũ trụ. Là nhiên liệu của các ngôi sao, dùng để sản xuất amoniac và trong pin nhiên liệu.",
-	"He", "Helium", "4.0026", 18, 1, "1s2", null, "-272.2 °C", "-268.93 °C", "31 pm", "2372 kJ/mol", "Khí hiếm trơ, nhẹ thứ hai. Dùng bơm khinh khí cầu và làm lạnh nam châm siêu dẫn của máy MRI.",
-	"Li", "Lithium", "6.94", 1, 2, "[He] 2s1", 0.98, "180.5 °C", "1342 °C", "152 pm", "520 kJ/mol", "Kim loại nhẹ nhất. Thành phần chính của pin lithium-ion trong điện thoại và xe điện.",
-	"Be", "Beryllium", "9.0122", 2, 2, "[He] 2s2", 1.57, "1287 °C", "2470 °C", "112 pm", "899 kJ/mol", "Kim loại nhẹ, cứng, gần như trong suốt với tia X. Dùng làm cửa sổ ống X-quang và hợp kim đồng-beri.",
-	"B", "Boron", "10.81", 13, 2, "[He] 2s2 2p1", 2.04, "2076 °C", "3927 °C", "87 pm", "801 kJ/mol", "Á kim rất cứng. Có trong thủy tinh borosilicat, borax và vật liệu hấp thụ neutron.",
-	"C", "Carbon", "12.011", 14, 2, "[He] 2s2 2p2", 2.55, "3550 °C", "4027 °C", "67 pm", "1086 kJ/mol", "Nền tảng của hóa học hữu cơ và sự sống. Tồn tại ở dạng kim cương, than chì và graphene.",
-	"N", "Nitrogen", "14.007", 15, 2, "[He] 2s2 2p3", 3.04, "-210 °C", "-195.79 °C", "56 pm", "1402 kJ/mol", "Chiếm khoảng 78% thể tích khí quyển. Thiết yếu cho protein, ADN và phân bón.",
-	"O", "Oxygen", "15.999", 16, 2, "[He] 2s2 2p4", 3.44, "-218.79 °C", "-182.95 °C", "48 pm", "1314 kJ/mol", "Chiếm khoảng 21% khí quyển và gần một nửa khối lượng vỏ Trái Đất. Cần cho hô hấp và sự cháy.",
-	"F", "Fluorine", "18.998", 17, 2, "[He] 2s2 2p5", 3.98, "-219.67 °C", "-188.11 °C", "42 pm", "1681 kJ/mol", "Có độ âm điện lớn nhất trong các nguyên tố. Có trong kem đánh răng (florua) và nhựa teflon.",
-	"Ne", "Neon", "20.18", 18, 2, "[He] 2s2 2p6", null, "-248.59 °C", "-246.08 °C", "38 pm", "2081 kJ/mol", "Khí hiếm phát sáng đỏ cam khi có dòng điện chạy qua, dùng trong đèn neon quảng cáo.",
-	"Na", "Sodium", "22.99", 1, 3, "[Ne] 3s1", 0.93, "97.8 °C", "883 °C", "186 pm", "496 kJ/mol", "Kim loại mềm, phản ứng mạnh với nước. Là thành phần của muối ăn (NaCl).",
-	"Mg", "Magnesium", "24.305", 2, 3, "[Ne] 3s2", 1.31, "650 °C", "1090 °C", "160 pm", "738 kJ/mol", "Kim loại nhẹ, cháy sáng chói. Có trong diệp lục của thực vật và trong các hợp kim nhẹ.",
-	"Al", "Aluminium", "26.982", 13, 3, "[Ne] 3s2 3p1", 1.61, "660.3 °C", "2519 °C", "143 pm", "578 kJ/mol", "Kim loại nhẹ, bền, phổ biến nhất trong vỏ Trái Đất. Dùng làm vỏ máy bay, lon nước, dây điện cao thế.",
-	"Si", "Silicon", "28.085", 14, 3, "[Ne] 3s2 3p2", 1.90, "1414 °C", "3265 °C", "117 pm", "786 kJ/mol", "Nền tảng của chip bán dẫn và pin mặt trời. Cát và thủy tinh chứa silic đioxit.",
-	"P", "Phosphorus", "30.974", 15, 3, "[Ne] 3s2 3p3", 2.19, "44.15 °C", "280.5 °C", "110 pm", "1012 kJ/mol", "Có trong ADN, ATP và xương. Dùng làm phân bón và đầu que diêm (dạng photpho đỏ).",
-	"S", "Sulfur", "32.06", 16, 3, "[Ne] 3s2 3p4", 2.58, "115.21 °C", "444.6 °C", "104 pm", "1000 kJ/mol", "Phi kim màu vàng. Dùng để sản xuất axit sunfuric và lưu hóa cao su.",
-	"Cl", "Chlorine", "35.45", 17, 3, "[Ne] 3s2 3p5", 3.16, "-101.5 °C", "-34.04 °C", "99 pm", "1251 kJ/mol", "Khí màu vàng lục, độc. Dùng khử trùng nước và sản xuất nhựa PVC.",
-	"Ar", "Argon", "39.948", 18, 3, "[Ne] 3s2 3p6", null, "-189.35 °C", "-185.85 °C", "71 pm", "1521 kJ/mol", "Khí hiếm chiếm khoảng 0,93% khí quyển. Dùng làm khí bảo vệ khi hàn và nạp trong bóng đèn.",
-	"K", "Potassium", "39.098", 1, 4, "[Ar] 4s1", 0.82, "63.5 °C", "759 °C", "227 pm", "419 kJ/mol", "Kim loại kiềm mềm. Cần cho hoạt động của thần kinh và cơ; có trong phân bón.",
-	"Ca", "Calcium", "40.078", 2, 4, "[Ar] 4s2", 1.00, "842 °C", "1484 °C", "197 pm", "590 kJ/mol", "Có trong xương, răng và vỏ sò. Dùng làm vôi, xi măng và thạch cao.",
-	"Sc", "Scandium", "44.956", 3, 4, "[Ar] 3d1 4s2", 1.36, "1541 °C", "2836 °C", "162 pm", "633 kJ/mol", "Kim loại hiếm. Hợp kim nhôm-scandi dùng cho máy bay và dụng cụ thể thao.",
-	"Ti", "Titanium", "47.867", 4, 4, "[Ar] 3d2 4s2", 1.54, "1668 °C", "3287 °C", "147 pm", "659 kJ/mol", "Kim loại nhẹ, bền, chống ăn mòn. Dùng trong máy bay, khớp nhân tạo; TiO₂ là bột màu trắng.",
-	"V", "Vanadium", "50.942", 5, 4, "[Ar] 3d3 4s2", 1.63, "1910 °C", "3407 °C", "134 pm", "651 kJ/mol", "Dùng làm thép hợp kim cứng và bền (thép vanadi), và trong pin lưu trữ năng lượng.",
-	"Cr", "Chromium", "51.996", 6, 4, "[Ar] 3d5 4s1", 1.66, "1907 °C", "2671 °C", "128 pm", "653 kJ/mol", "Kim loại cứng, sáng bóng. Dùng mạ crom và là thành phần của thép không gỉ.",
-	"Mn", "Manganese", "54.938", 7, 4, "[Ar] 3d5 4s2", 1.55, "1246 °C", "2061 °C", "127 pm", "717 kJ/mol", "Dùng sản xuất thép và pin kiềm. Cần cho nhiều enzyme trong cơ thể.",
-	"Fe", "Iron", "55.845", 8, 4, "[Ar] 3d6 4s2", 1.83, "1538 °C", "2861 °C", "126 pm", "762 kJ/mol", "Kim loại phổ biến nhất trong lõi Trái Đất. Là thành phần chính của thép và của hemoglobin trong máu.",
-	"Co", "Cobalt", "58.933", 9, 4, "[Ar] 3d7 4s2", 1.88, "1495 °C", "2927 °C", "125 pm", "760 kJ/mol", "Kim loại có từ tính. Dùng trong pin, hợp kim siêu bền; vitamin B12 chứa coban.",
-	"Ni", "Nickel", "58.693", 10, 4, "[Ar] 3d8 4s2", 1.91, "1455 °C", "2913 °C", "124 pm", "737 kJ/mol", "Chống ăn mòn tốt. Dùng mạ kim loại, làm thép không gỉ, tiền xu và pin.",
-	"Cu", "Copper", "63.546", 11, 4, "[Ar] 3d10 4s1", 1.90, "1084.6 °C", "2562 °C", "128 pm", "745 kJ/mol", "Dẫn điện và nhiệt tốt. Dùng làm dây điện, đồng thau (với kẽm) và đồng thanh (với thiếc).",
-	"Zn", "Zinc", "65.38", 12, 4, "[Ar] 3d10 4s2", 1.65, "419.5 °C", "907 °C", "134 pm", "906 kJ/mol", "Dùng mạ chống gỉ cho thép (tôn mạ kẽm), làm đồng thau và pin.",
-	"Ga", "Gallium", "69.723", 13, 4, "[Ar] 3d10 4s2 4p1", 1.81, "29.76 °C", "2204 °C", "135 pm", "579 kJ/mol", "Kim loại nóng chảy ngay trong lòng bàn tay. Dùng trong đèn LED và chip GaAs.",
-	"Ge", "Germanium", "72.63", 14, 4, "[Ar] 3d10 4s2 4p2", 2.01, "938.3 °C", "2833 °C", "122 pm", "762 kJ/mol", "Á kim bán dẫn, từng dùng trong những transistor đầu tiên. Dùng trong cáp quang và kính hồng ngoại.",
-	"As", "Arsenic", "74.922", 15, 4, "[Ar] 3d10 4s2 4p3", 2.18, "817 °C", "614 °C", "120 pm", "947 kJ/mol", "Á kim độc. Hợp chất GaAs dùng trong chất bán dẫn; từng được dùng làm thuốc trừ sâu.",
-	"Se", "Selenium", "78.971", 16, 4, "[Ar] 3d10 4s2 4p4", 2.55, "221 °C", "685 °C", "119 pm", "941 kJ/mol", "Phi kim cần với lượng rất nhỏ cho cơ thể. Dùng trong pin mặt trời, thủy tinh và dầu gội trị gàu.",
-	"Br", "Bromine", "79.904", 17, 4, "[Ar] 3d10 4s2 4p5", 2.96, "-7.2 °C", "58.8 °C", "114 pm", "1140 kJ/mol", "Một trong hai nguyên tố ở thể lỏng ở nhiệt độ phòng. Dùng làm chất chống cháy và thuốc nhuộm.",
-	"Kr", "Krypton", "83.798", 18, 4, "[Ar] 3d10 4s2 4p6", 3.00, "-157.4 °C", "-153.4 °C", "88 pm", "1351 kJ/mol", "Khí hiếm. Dùng trong đèn huỳnh quang, đèn flash chụp ảnh và một số loại laze.",
-	"Rb", "Rubidium", "85.468", 1, 5, "[Kr] 5s1", 0.82, "39.3 °C", "688 °C", "248 pm", "403 kJ/mol", "Kim loại kiềm rất mềm. Dùng trong đồng hồ nguyên tử và nghiên cứu vật lý lượng tử.",
-	"Sr", "Strontium", "87.62", 2, 5, "[Kr] 5s2", 0.95, "777 °C", "1377 °C", "215 pm", "549 kJ/mol", "Cho ngọn lửa đỏ thẫm, dùng trong pháo hoa và đèn tín hiệu.",
-	"Y", "Yttrium", "88.906", 3, 5, "[Kr] 4d1 5s2", 1.22, "1526 °C", "3345 °C", "180 pm", "600 kJ/mol", "Dùng trong đèn LED trắng (YAG), laze và vật liệu siêu dẫn nhiệt độ cao.",
-	"Zr", "Zirconium", "91.224", 4, 5, "[Kr] 4d2 5s2", 1.33, "1855 °C", "4409 °C", "160 pm", "640 kJ/mol", "Chống ăn mòn và ít hấp thụ neutron. Dùng làm vỏ bọc nhiên liệu trong lò phản ứng hạt nhân.",
-	"Nb", "Niobium", "92.906", 5, 5, "[Kr] 4d4 5s1", 1.6, "2477 °C", "4744 °C", "146 pm", "652 kJ/mol", "Dùng trong thép hợp kim bền và dây siêu dẫn của nam châm máy MRI.",
-	"Mo", "Molybdenum", "95.95", 6, 5, "[Kr] 4d5 5s1", 2.16, "2623 °C", "4639 °C", "139 pm", "684 kJ/mol", "Nóng chảy ở nhiệt độ rất cao. Dùng làm thép hợp kim bền và xúc tác lọc dầu.",
-	"Tc", "Technetium", "98", 7, 5, "[Kr] 4d5 5s2", 1.9, "2157 °C", "4265 °C", "136 pm", "702 kJ/mol", "Nguyên tố đầu tiên được tạo ra nhân tạo. Đồng vị Tc-99m dùng nhiều trong chẩn đoán y học hạt nhân.",
-	"Ru", "Ruthenium", "101.07", 8, 5, "[Kr] 4d7 5s1", 2.2, "2334 °C", "4150 °C", "134 pm", "710 kJ/mol", "Kim loại họ platin. Dùng làm tiếp điểm điện cứng và chất xúc tác.",
-	"Rh", "Rhodium", "102.91", 9, 5, "[Kr] 4d8 5s1", 2.28, "1964 °C", "3695 °C", "134 pm", "720 kJ/mol", "Kim loại quý hiếm. Dùng trong bộ xúc tác khí thải ô tô và mạ đồ trang sức.",
-	"Pd", "Palladium", "106.42", 10, 5, "[Kr] 4d10", 2.20, "1554.9 °C", "2963 °C", "137 pm", "804 kJ/mol", "Hấp thụ nhiều hiđro. Dùng trong bộ xúc tác khí thải, điện tử và nha khoa.",
-	"Ag", "Silver", "107.87", 11, 5, "[Kr] 4d10 5s1", 1.93, "961.8 °C", "2162 °C", "144 pm", "731 kJ/mol", "Dẫn điện và nhiệt tốt nhất trong các kim loại. Dùng làm trang sức, gương và tiếp điểm điện.",
-	"Cd", "Cadmium", "112.41", 12, 5, "[Kr] 4d10 5s2", 1.69, "321.1 °C", "767 °C", "151 pm", "868 kJ/mol", "Kim loại độc. Dùng trong pin Ni-Cd và mạ kim loại, nay bị hạn chế vì độc tính.",
-	"In", "Indium", "114.82", 13, 5, "[Kr] 4d10 5s2 5p1", 1.78, "156.6 °C", "2072 °C", "167 pm", "558 kJ/mol", "Kim loại mềm. Hợp chất ITO tạo lớp dẫn điện trong suốt cho màn hình cảm ứng.",
-	"Sn", "Tin", "118.71", 14, 5, "[Kr] 4d10 5s2 5p2", 1.96, "231.9 °C", "2602 °C", "140 pm", "709 kJ/mol", "Dùng mạ hộp thiếc, làm thiếc hàn và đồng thanh.",
-	"Sb", "Antimony", "121.76", 15, 5, "[Kr] 4d10 5s2 5p3", 2.05, "630.6 °C", "1587 °C", "140 pm", "834 kJ/mol", "Dùng làm hợp kim cứng với chì, chất chống cháy và chất bán dẫn.",
-	"Te", "Tellurium", "127.6", 16, 5, "[Kr] 4d10 5s2 5p4", 2.1, "449.5 °C", "988 °C", "142 pm", "869 kJ/mol", "Dùng trong pin mặt trời CdTe và vật liệu nhiệt điện.",
-	"I", "Iodine", "126.9", 17, 5, "[Kr] 4d10 5s2 5p5", 2.66, "113.7 °C", "184.3 °C", "133 pm", "1008 kJ/mol", "Cần cho hormone tuyến giáp. Dùng khử trùng và bổ sung vào muối iot.",
-	"Xe", "Xenon", "131.29", 18, 5, "[Kr] 4d10 5s2 5p6", 2.6, "-111.8 °C", "-108.1 °C", "108 pm", "1170 kJ/mol", "Khí hiếm nặng. Dùng trong đèn pha xenon và động cơ ion của tàu vũ trụ.",
-	"Cs", "Caesium", "132.91", 1, 6, "[Xe] 6s1", 0.79, "28.4 °C", "671 °C", "265 pm", "376 kJ/mol", "Kim loại mềm, phản ứng cực mạnh. Dao động của nguyên tử xesi dùng để định nghĩa giây trong đồng hồ nguyên tử.",
-	"Ba", "Barium", "137.33", 2, 6, "[Xe] 6s2", 0.89, "727 °C", "1845 °C", "222 pm", "503 kJ/mol", "Bari sunfat dùng làm chất cản quang khi chụp X-quang; cho ngọn lửa màu lục trong pháo hoa.",
-	"La", "Lanthanum", "138.91", 4, 9, "[Xe] 5d1 6s2", 1.10, "920 °C", "3464 °C", "187 pm", "538 kJ/mol", "Dùng trong ống kính máy ảnh, pin NiMH và xúc tác lọc dầu.",
-	"Ce", "Cerium", "140.12", 5, 9, "[Xe] 4f1 5d1 6s2", 1.12, "795 °C", "3443 °C", "182 pm", "534 kJ/mol", "Nguyên tố đất hiếm dồi dào nhất. Dùng đánh bóng kính và làm đá lửa bật lửa.",
-	"Pr", "Praseodymium", "140.91", 6, 9, "[Xe] 4f3 6s2", 1.13, "935 °C", "3520 °C", "183 pm", "527 kJ/mol", "Tạo màu vàng lục cho thủy tinh và gốm; có trong nam châm đất hiếm.",
-	"Nd", "Neodymium", "144.24", 7, 9, "[Xe] 4f4 6s2", 1.14, "1024 °C", "3074 °C", "182 pm", "533 kJ/mol", "Tạo ra loại nam châm mạnh nhất (NdFeB), dùng trong động cơ điện và tai nghe.",
-	"Pm", "Promethium", "145", 8, 9, "[Xe] 4f5 6s2", 1.13, "1042 °C", "3000 °C", "181 pm", "540 kJ/mol", "Phóng xạ, không có đồng vị bền. Dùng trong pin hạt nhân nhỏ và sơn phát sáng.",
-	"Sm", "Samarium", "150.36", 9, 9, "[Xe] 4f6 6s2", 1.17, "1072 °C", "1794 °C", "180 pm", "545 kJ/mol", "Dùng làm nam châm samari-coban chịu nhiệt cao và thanh điều khiển lò phản ứng.",
-	"Eu", "Europium", "151.96", 10, 9, "[Xe] 4f7 6s2", 1.2, "826 °C", "1529 °C", "180 pm", "547 kJ/mol", "Phát quang đỏ và xanh. Dùng trong màn hình, đèn huỳnh quang và mực chống giả trên tiền euro.",
-	"Gd", "Gadolinium", "157.25", 11, 9, "[Xe] 4f7 5d1 6s2", 1.2, "1312 °C", "3273 °C", "180 pm", "593 kJ/mol", "Từ tính mạnh. Dùng làm thuốc cản quang khi chụp MRI và hấp thụ neutron.",
-	"Tb", "Terbium", "158.93", 12, 9, "[Xe] 4f9 6s2", 1.1, "1356 °C", "3230 °C", "177 pm", "566 kJ/mol", "Phát sáng màu lục, dùng trong đèn huỳnh quang và màn hình.",
-	"Dy", "Dysprosium", "162.5", 13, 9, "[Xe] 4f10 6s2", 1.22, "1407 °C", "2567 °C", "178 pm", "573 kJ/mol", "Thêm vào nam châm NdFeB để chịu nhiệt tốt hơn; dùng trong tuabin gió và xe điện.",
-	"Ho", "Holmium", "164.93", 14, 9, "[Xe] 4f11 6s2", 1.23, "1461 °C", "2720 °C", "176 pm", "581 kJ/mol", "Có từ tính mạnh nhất trong các nguyên tố. Dùng trong laze y học và nam châm.",
-	"Er", "Erbium", "167.26", 15, 9, "[Xe] 4f12 6s2", 1.24, "1529 °C", "2868 °C", "175 pm", "589 kJ/mol", "Dùng trong bộ khuếch đại cáp quang và laze; tạo màu hồng cho thủy tinh.",
-	"Tm", "Thulium", "168.93", 16, 9, "[Xe] 4f13 6s2", 1.25, "1545 °C", "1950 °C", "174 pm", "597 kJ/mol", "Dùng trong laze y tế và thiết bị X-quang xách tay.",
-	"Yb", "Ytterbium", "173.05", 17, 9, "[Xe] 4f14 6s2", 1.1, "824 °C", "1196 °C", "194 pm", "603 kJ/mol", "Dùng trong đồng hồ nguyên tử quang học và laze sợi quang.",
-	"Lu", "Lutetium", "174.97", 18, 9, "[Xe] 4f14 5d1 6s2", 1.27, "1652 °C", "3402 °C", "174 pm", "524 kJ/mol", "Hiếm và đắt. Dùng trong máy chụp PET và chất xúc tác lọc dầu.",
-	"Hf", "Hafnium", "178.49", 4, 6, "[Xe] 4f14 5d2 6s2", 1.3, "2233 °C", "4603 °C", "159 pm", "659 kJ/mol", "Hấp thụ neutron tốt, dùng làm thanh điều khiển lò hạt nhân và trong chip vi xử lý.",
-	"Ta", "Tantalum", "180.95", 5, 6, "[Xe] 4f14 5d3 6s2", 1.5, "3017 °C", "5458 °C", "146 pm", "761 kJ/mol", "Rất bền với ăn mòn. Dùng trong tụ điện của điện thoại và dụng cụ phẫu thuật.",
-	"W", "Tungsten", "183.84", 6, 6, "[Xe] 4f14 5d4 6s2", 2.36, "3422 °C", "5555 °C", "139 pm", "770 kJ/mol", "Có nhiệt độ nóng chảy cao nhất trong các kim loại. Dùng làm dây tóc bóng đèn và mũi khoan.",
-	"Re", "Rhenium", "186.21", 7, 6, "[Xe] 4f14 5d5 6s2", 1.9, "3186 °C", "5596 °C", "137 pm", "760 kJ/mol", "Một trong những kim loại nóng chảy cao nhất. Dùng trong động cơ phản lực và xúc tác.",
-	"Os", "Osmium", "190.23", 8, 6, "[Xe] 4f14 5d6 6s2", 2.2, "3033 °C", "5012 °C", "135 pm", "840 kJ/mol", "Một trong hai nguyên tố đặc nhất. Dùng làm hợp kim rất cứng, ngòi bút và tiếp điểm.",
-	"Ir", "Iridium", "192.22", 9, 6, "[Xe] 4f14 5d7 6s2", 2.20, "2446 °C", "4428 °C", "136 pm", "880 kJ/mol", "Rất bền ăn mòn. Dùng trong bugi cao cấp; hợp kim platin-iridi từng làm chuẩn mét và kilôgam.",
-	"Pt", "Platinum", "195.08", 10, 6, "[Xe] 4f14 5d9 6s1", 2.28, "1768.3 °C", "3825 °C", "139 pm", "870 kJ/mol", "Kim loại quý, bền hóa học. Dùng làm trang sức, xúc tác khí thải và thuốc chống ung thư cisplatin.",
-	"Au", "Gold", "196.97", 11, 6, "[Xe] 4f14 5d10 6s1", 2.54, "1064.2 °C", "2856 °C", "144 pm", "890 kJ/mol", "Kim loại quý màu vàng, không gỉ. Dùng làm trang sức, dự trữ giá trị và linh kiện điện tử.",
-	"Hg", "Mercury", "200.59", 12, 6, "[Xe] 4f14 5d10 6s2", 2.00, "-38.83 °C", "356.7 °C", "151 pm", "1007 kJ/mol", "Kim loại duy nhất ở thể lỏng ở nhiệt độ phòng. Từng dùng trong nhiệt kế; rất độc.",
-	"Tl", "Thallium", "204.38", 13, 6, "[Xe] 4f14 5d10 6s2 6p1", 1.62, "304 °C", "1473 °C", "170 pm", "589 kJ/mol", "Kim loại mềm và rất độc. Dùng trong bộ dò hồng ngoại và một số thiết bị chẩn đoán tim.",
-	"Pb", "Lead", "207.2", 14, 6, "[Xe] 4f14 5d10 6s2 6p2", 2.33, "327.5 °C", "1749 °C", "175 pm", "716 kJ/mol", "Nặng, mềm và độc. Dùng trong ắc quy axit-chì và làm tấm chắn bức xạ.",
-	"Bi", "Bismuth", "208.98", 15, 6, "[Xe] 4f14 5d10 6s2 6p3", 2.02, "271.4 °C", "1564 °C", "155 pm", "703 kJ/mol", "Ít độc hơn các kim loại nặng khác. Dùng trong thuốc dạ dày và hợp kim nóng chảy ở nhiệt độ thấp.",
-	"Po", "Polonium", "209", 16, 6, "[Xe] 4f14 5d10 6s2 6p4", 2.0, "254 °C", "962 °C", "167 pm", "812 kJ/mol", "Phóng xạ rất mạnh. Marie Curie đặt tên theo quê hương Ba Lan của bà.",
-	"At", "Astatine", "210", 17, 6, "[Xe] 4f14 5d10 6s2 6p5", 2.2, "302 °C", "337 °C", "150 pm", "899 kJ/mol", "Nguyên tố tự nhiên hiếm nhất, phóng xạ. Đang được nghiên cứu cho điều trị ung thư.",
-	"Rn", "Radon", "222", 18, 6, "[Xe] 4f14 5d10 6s2 6p6", 2.2, "-71 °C", "-61.7 °C", "120 pm", "1037 kJ/mol", "Khí phóng xạ sinh ra từ sự phân rã của urani. Tích tụ trong nhà kín là nguy cơ gây ung thư phổi.",
-	"Fr", "Francium", "223", 1, 7, "[Rn] 7s1", 0.7, "27 °C", "677 °C", "—", "380 kJ/mol", "Kim loại kiềm cực hiếm và phóng xạ; đồng vị bền nhất chỉ có chu kỳ bán rã khoảng 22 phút.",
-	"Ra", "Radium", "226", 2, 7, "[Rn] 7s2", 0.9, "700 °C", "1737 °C", "223 pm", "509 kJ/mol", "Phóng xạ. Từng dùng làm sơn dạ quang và trong xạ trị.",
-	"Ac", "Actinium", "227", 4, 10, "[Rn] 6d1 7s2", 1.1, "1050 °C", "3200 °C", "188 pm", "499 kJ/mol", "Phóng xạ, phát ánh sáng xanh trong bóng tối. Dùng trong nghiên cứu y học hạt nhân.",
-	"Th", "Thorium", "232.04", 5, 10, "[Rn] 6d2 7s2", 1.3, "1750 °C", "4788 °C", "180 pm", "587 kJ/mol", "Phóng xạ yếu, dồi dào hơn urani. Được nghiên cứu làm nhiên liệu hạt nhân.",
-	"Pa", "Protactinium", "231.04", 6, 10, "[Rn] 5f2 6d1 7s2", 1.5, "1568 °C", "4027 °C", "161 pm", "568 kJ/mol", "Phóng xạ, rất hiếm. Chủ yếu dùng trong nghiên cứu khoa học.",
-	"U", "Uranium", "238.03", 7, 10, "[Rn] 5f3 6d1 7s2", 1.38, "1132 °C", "4131 °C", "156 pm", "598 kJ/mol", "Nhiên liệu của lò phản ứng hạt nhân; đồng vị U-235 có thể phân hạch.",
-	"Np", "Neptunium", "237", 8, 10, "[Rn] 5f4 6d1 7s2", 1.36, "644 °C", "3902 °C", "155 pm", "605 kJ/mol", "Nguyên tố siêu urani đầu tiên được tổng hợp, đặt tên theo hành tinh Hải Vương (Neptune).",
-	"Pu", "Plutonium", "244", 9, 10, "[Rn] 5f6 7s2", 1.28, "640 °C", "3228 °C", "159 pm", "585 kJ/mol", "Dùng trong vũ khí hạt nhân và trong pin hạt nhân cho tàu thăm dò vũ trụ.",
-	"Am", "Americium", "243", 10, 10, "[Rn] 5f7 7s2", 1.3, "1176 °C", "2011 °C", "173 pm", "578 kJ/mol", "Có trong đầu báo khói ion hóa gia dụng (Am-241).",
-	"Cm", "Curium", "247", 11, 10, "[Rn] 5f7 6d1 7s2", 1.3, "1340 °C", "3110 °C", "174 pm", "581 kJ/mol", "Phóng xạ mạnh. Dùng trong máy phân tích APXS trên xe tự hành thăm dò sao Hỏa.",
-	"Bk", "Berkelium", "247", 12, 10, "[Rn] 5f9 7s2", 1.3, "986 °C", "2627 °C", "170 pm", "601 kJ/mol", "Tổng hợp nhân tạo. Dùng làm bia để tổng hợp các nguyên tố nặng hơn.",
-	"Cf", "Californium", "251", 13, 10, "[Rn] 5f10 7s2", 1.3, "900 °C", "1470 °C", "186 pm", "608 kJ/mol", "Phát ra neutron mạnh. Dùng khởi động lò phản ứng và trong thăm dò dầu khí.",
-	"Es", "Einsteinium", "252", 14, 10, "[Rn] 5f11 7s2", 1.3, "860 °C", "996 °C", "186 pm", "619 kJ/mol", "Chỉ tổng hợp được lượng rất nhỏ. Đặt theo Albert Einstein.",
-	"Fm", "Fermium", "257", 15, 10, "[Rn] 5f12 7s2", 1.3, "1527 °C", "—", "—", "627 kJ/mol", "Chỉ tạo ra được lượng cực nhỏ. Đặt theo Enrico Fermi.",
-	"Md", "Mendelevium", "258", 16, 10, "[Rn] 5f13 7s2", 1.3, "827 °C", "—", "—", "635 kJ/mol", "Đặt theo Dmitri Mendeleev, người xây dựng bảng tuần hoàn.",
-	"No", "Nobelium", "259", 17, 10, "[Rn] 5f14 7s2", 1.3, "827 °C", "—", "—", "642 kJ/mol", "Mỗi lần chỉ tạo được vài nguyên tử. Đặt theo Alfred Nobel.",
-	"Lr", "Lawrencium", "266", 18, 10, "[Rn] 5f14 7s2 7p1", 1.3, "1627 °C", "—", "—", "470 kJ/mol", "Nguyên tố cuối của họ actini; chỉ nghiên cứu được trên vài nguyên tử.",
-	"Rf", "Rutherfordium", "267", 4, 7, "[Rn] 5f14 6d2 7s2", null, "—", "—", "—", "580 kJ/mol", "Nguyên tố siêu nặng, chỉ tổng hợp nhân tạo và tồn tại rất ngắn. Đặt theo Ernest Rutherford.",
-	"Db", "Dubnium", "268", 5, 7, "[Rn] 5f14 6d3 7s2", null, "—", "—", "—", "—", "Nguyên tố siêu nặng, tổng hợp nhân tạo. Đặt theo thị trấn Dubna của Nga.",
-	"Sg", "Seaborgium", "269", 6, 7, "[Rn] 5f14 6d4 7s2", null, "—", "—", "—", "—", "Nguyên tố siêu nặng, tổng hợp nhân tạo. Đặt theo Glenn Seaborg.",
-	"Bh", "Bohrium", "270", 7, 7, "[Rn] 5f14 6d5 7s2", null, "—", "—", "—", "—", "Nguyên tố siêu nặng, tổng hợp nhân tạo. Đặt theo Niels Bohr.",
-	"Hs", "Hassium", "277", 8, 7, "[Rn] 5f14 6d6 7s2", null, "—", "—", "—", "—", "Nguyên tố siêu nặng, tổng hợp nhân tạo. Đặt theo bang Hessen của Đức.",
-	"Mt", "Meitnerium", "278", 9, 7, "[Rn] 5f14 6d7 7s2", null, "—", "—", "—", "—", "Nguyên tố siêu nặng, tổng hợp nhân tạo. Đặt theo nhà vật lý Lise Meitner.",
-	"Ds", "Darmstadtium", "281", 10, 7, "[Rn] 5f14 6d8 7s2", null, "—", "—", "—", "—", "Nguyên tố siêu nặng, tổng hợp nhân tạo. Đặt theo thành phố Darmstadt của Đức.",
-	"Rg", "Roentgenium", "282", 11, 7, "[Rn] 5f14 6d9 7s2", null, "—", "—", "—", "—", "Nguyên tố siêu nặng, tổng hợp nhân tạo. Đặt theo Wilhelm Röntgen, người phát hiện tia X.",
-	"Cn", "Copernicium", "285", 12, 7, "[Rn] 5f14 6d10 7s2", null, "—", "—", "—", "—", "Nguyên tố siêu nặng, tổng hợp nhân tạo. Đặt theo Nicolaus Copernicus.",
-	"Uut", "Ununtrium", "284", 13, 7, "[Rn] 5f14 6d10 7s2 7p1", null, "—", "—", "—", "—", "Nguyên tố siêu nặng, tổng hợp nhân tạo, sau này được đặt tên là Nihonium (Nh).",
-	"Fl", "Flerovium", "289", 14, 7, "[Rn] 5f14 6d10 7s2 7p2", null, "—", "—", "—", "—", "Nguyên tố siêu nặng, tổng hợp nhân tạo. Đặt theo Phòng thí nghiệm Flerov ở Dubna.",
-	"Uup", "Ununpentium", "288", 15, 7, "[Rn] 5f14 6d10 7s2 7p3", null, "—", "—", "—", "—", "Nguyên tố siêu nặng, tổng hợp nhân tạo, sau này được đặt tên là Moscovium (Mc).",
-	"Lv", "Livermorium", "293", 16, 7, "[Rn] 5f14 6d10 7s2 7p4", null, "—", "—", "—", "—", "Nguyên tố siêu nặng, tổng hợp nhân tạo. Đặt theo Phòng thí nghiệm Lawrence Livermore.",
-	"Uus", "Ununseptium", "294", 17, 7, "[Rn] 5f14 6d10 7s2 7p5", null, "—", "—", "—", "—", "Nguyên tố siêu nặng, tổng hợp nhân tạo, sau này được đặt tên là Tennessine (Ts).",
-	"Uuo", "Ununoctium", "294", 18, 7, "[Rn] 5f14 6d10 7s2 7p6", null, "—", "—", "—", "—", "Nguyên tố nặng nhất đã biết, tổng hợp nhân tạo. Sau này được đặt tên là Oganesson (Og)."
+	"H", "Hydrogen", "1.008", 1, 1, "1s1", 2.20, "-259.16 °C", "-252.87 °C", "53 pm", "1312 kJ/mol", "−1, +1", "Nguyên tố nhẹ nhất và nhiều nhất vũ trụ. Là nhiên liệu của các ngôi sao, dùng để sản xuất amoniac và trong pin nhiên liệu.",
+	"He", "Helium", "4.0026", 18, 1, "1s2", null, "-272.2 °C", "-268.93 °C", "31 pm", "2372 kJ/mol", "0", "Khí hiếm trơ, nhẹ thứ hai. Dùng bơm khinh khí cầu và làm lạnh nam châm siêu dẫn của máy MRI.",
+	"Li", "Lithium", "6.94", 1, 2, "[He] 2s1", 0.98, "180.5 °C", "1342 °C", "152 pm", "520 kJ/mol", "+1", "Kim loại nhẹ nhất. Thành phần chính của pin lithium-ion trong điện thoại và xe điện.",
+	"Be", "Beryllium", "9.0122", 2, 2, "[He] 2s2", 1.57, "1287 °C", "2470 °C", "112 pm", "899 kJ/mol", "+2", "Kim loại nhẹ, cứng, gần như trong suốt với tia X. Dùng làm cửa sổ ống X-quang và hợp kim đồng-beri.",
+	"B", "Boron", "10.81", 13, 2, "[He] 2s2 2p1", 2.04, "2076 °C", "3927 °C", "87 pm", "801 kJ/mol", "+3", "Á kim rất cứng. Có trong thủy tinh borosilicat, borax và vật liệu hấp thụ neutron.",
+	"C", "Carbon", "12.011", 14, 2, "[He] 2s2 2p2", 2.55, "3550 °C", "4027 °C", "67 pm", "1086 kJ/mol", "−4, +2, +4", "Nền tảng của hóa học hữu cơ và sự sống. Tồn tại ở dạng kim cương, than chì và graphene.",
+	"N", "Nitrogen", "14.007", 15, 2, "[He] 2s2 2p3", 3.04, "-210 °C", "-195.79 °C", "56 pm", "1402 kJ/mol", "−3, +3, +5", "Chiếm khoảng 78% thể tích khí quyển. Thiết yếu cho protein, ADN và phân bón.",
+	"O", "Oxygen", "15.999", 16, 2, "[He] 2s2 2p4", 3.44, "-218.79 °C", "-182.95 °C", "48 pm", "1314 kJ/mol", "−2", "Chiếm khoảng 21% khí quyển và gần một nửa khối lượng vỏ Trái Đất. Cần cho hô hấp và sự cháy.",
+	"F", "Fluorine", "18.998", 17, 2, "[He] 2s2 2p5", 3.98, "-219.67 °C", "-188.11 °C", "42 pm", "1681 kJ/mol", "−1", "Có độ âm điện lớn nhất trong các nguyên tố. Có trong kem đánh răng (florua) và nhựa teflon.",
+	"Ne", "Neon", "20.18", 18, 2, "[He] 2s2 2p6", null, "-248.59 °C", "-246.08 °C", "38 pm", "2081 kJ/mol", "0", "Khí hiếm phát sáng đỏ cam khi có dòng điện chạy qua, dùng trong đèn neon quảng cáo.",
+	"Na", "Sodium", "22.99", 1, 3, "[Ne] 3s1", 0.93, "97.8 °C", "883 °C", "186 pm", "496 kJ/mol", "+1", "Kim loại mềm, phản ứng mạnh với nước. Là thành phần của muối ăn (NaCl).",
+	"Mg", "Magnesium", "24.305", 2, 3, "[Ne] 3s2", 1.31, "650 °C", "1090 °C", "160 pm", "738 kJ/mol", "+2", "Kim loại nhẹ, cháy sáng chói. Có trong diệp lục của thực vật và trong các hợp kim nhẹ.",
+	"Al", "Aluminium", "26.982", 13, 3, "[Ne] 3s2 3p1", 1.61, "660.3 °C", "2519 °C", "143 pm", "578 kJ/mol", "+3", "Kim loại nhẹ, bền, phổ biến nhất trong vỏ Trái Đất. Dùng làm vỏ máy bay, lon nước, dây điện cao thế.",
+	"Si", "Silicon", "28.085", 14, 3, "[Ne] 3s2 3p2", 1.90, "1414 °C", "3265 °C", "117 pm", "786 kJ/mol", "−4, +4", "Nền tảng của chip bán dẫn và pin mặt trời. Cát và thủy tinh chứa silic đioxit.",
+	"P", "Phosphorus", "30.974", 15, 3, "[Ne] 3s2 3p3", 2.19, "44.15 °C", "280.5 °C", "110 pm", "1012 kJ/mol", "−3, +3, +5", "Có trong ADN, ATP và xương. Dùng làm phân bón và đầu que diêm (dạng photpho đỏ).",
+	"S", "Sulfur", "32.06", 16, 3, "[Ne] 3s2 3p4", 2.58, "115.21 °C", "444.6 °C", "104 pm", "1000 kJ/mol", "−2, +4, +6", "Phi kim màu vàng. Dùng để sản xuất axit sunfuric và lưu hóa cao su.",
+	"Cl", "Chlorine", "35.45", 17, 3, "[Ne] 3s2 3p5", 3.16, "-101.5 °C", "-34.04 °C", "99 pm", "1251 kJ/mol", "−1, +1, +3, +5, +7", "Khí màu vàng lục, độc. Dùng khử trùng nước và sản xuất nhựa PVC.",
+	"Ar", "Argon", "39.948", 18, 3, "[Ne] 3s2 3p6", null, "-189.35 °C", "-185.85 °C", "71 pm", "1521 kJ/mol", "0", "Khí hiếm chiếm khoảng 0,93% khí quyển. Dùng làm khí bảo vệ khi hàn và nạp trong bóng đèn.",
+	"K", "Potassium", "39.098", 1, 4, "[Ar] 4s1", 0.82, "63.5 °C", "759 °C", "227 pm", "419 kJ/mol", "+1", "Kim loại kiềm mềm. Cần cho hoạt động của thần kinh và cơ; có trong phân bón.",
+	"Ca", "Calcium", "40.078", 2, 4, "[Ar] 4s2", 1.00, "842 °C", "1484 °C", "197 pm", "590 kJ/mol", "+2", "Có trong xương, răng và vỏ sò. Dùng làm vôi, xi măng và thạch cao.",
+	"Sc", "Scandium", "44.956", 3, 4, "[Ar] 3d1 4s2", 1.36, "1541 °C", "2836 °C", "162 pm", "633 kJ/mol", "+3", "Kim loại hiếm. Hợp kim nhôm-scandi dùng cho máy bay và dụng cụ thể thao.",
+	"Ti", "Titanium", "47.867", 4, 4, "[Ar] 3d2 4s2", 1.54, "1668 °C", "3287 °C", "147 pm", "659 kJ/mol", "+2, +3, +4", "Kim loại nhẹ, bền, chống ăn mòn. Dùng trong máy bay, khớp nhân tạo; TiO₂ là bột màu trắng.",
+	"V", "Vanadium", "50.942", 5, 4, "[Ar] 3d3 4s2", 1.63, "1910 °C", "3407 °C", "134 pm", "651 kJ/mol", "+2, +3, +4, +5", "Dùng làm thép hợp kim cứng và bền (thép vanadi), và trong pin lưu trữ năng lượng.",
+	"Cr", "Chromium", "51.996", 6, 4, "[Ar] 3d5 4s1", 1.66, "1907 °C", "2671 °C", "128 pm", "653 kJ/mol", "+2, +3, +6", "Kim loại cứng, sáng bóng. Dùng mạ crom và là thành phần của thép không gỉ.",
+	"Mn", "Manganese", "54.938", 7, 4, "[Ar] 3d5 4s2", 1.55, "1246 °C", "2061 °C", "127 pm", "717 kJ/mol", "+2, +3, +4, +6, +7", "Dùng sản xuất thép và pin kiềm. Cần cho nhiều enzyme trong cơ thể.",
+	"Fe", "Iron", "55.845", 8, 4, "[Ar] 3d6 4s2", 1.83, "1538 °C", "2861 °C", "126 pm", "762 kJ/mol", "+2, +3", "Kim loại phổ biến nhất trong lõi Trái Đất. Là thành phần chính của thép và của hemoglobin trong máu.",
+	"Co", "Cobalt", "58.933", 9, 4, "[Ar] 3d7 4s2", 1.88, "1495 °C", "2927 °C", "125 pm", "760 kJ/mol", "+2, +3", "Kim loại có từ tính. Dùng trong pin, hợp kim siêu bền; vitamin B12 chứa coban.",
+	"Ni", "Nickel", "58.693", 10, 4, "[Ar] 3d8 4s2", 1.91, "1455 °C", "2913 °C", "124 pm", "737 kJ/mol", "+2, +3", "Chống ăn mòn tốt. Dùng mạ kim loại, làm thép không gỉ, tiền xu và pin.",
+	"Cu", "Copper", "63.546", 11, 4, "[Ar] 3d10 4s1", 1.90, "1084.6 °C", "2562 °C", "128 pm", "745 kJ/mol", "+1, +2", "Dẫn điện và nhiệt tốt. Dùng làm dây điện, đồng thau (với kẽm) và đồng thanh (với thiếc).",
+	"Zn", "Zinc", "65.38", 12, 4, "[Ar] 3d10 4s2", 1.65, "419.5 °C", "907 °C", "134 pm", "906 kJ/mol", "+2", "Dùng mạ chống gỉ cho thép (tôn mạ kẽm), làm đồng thau và pin.",
+	"Ga", "Gallium", "69.723", 13, 4, "[Ar] 3d10 4s2 4p1", 1.81, "29.76 °C", "2204 °C", "135 pm", "579 kJ/mol", "+3", "Kim loại nóng chảy ngay trong lòng bàn tay. Dùng trong đèn LED và chip GaAs.",
+	"Ge", "Germanium", "72.63", 14, 4, "[Ar] 3d10 4s2 4p2", 2.01, "938.3 °C", "2833 °C", "122 pm", "762 kJ/mol", "+2, +4", "Á kim bán dẫn, từng dùng trong những transistor đầu tiên. Dùng trong cáp quang và kính hồng ngoại.",
+	"As", "Arsenic", "74.922", 15, 4, "[Ar] 3d10 4s2 4p3", 2.18, "817 °C", "614 °C", "120 pm", "947 kJ/mol", "−3, +3, +5", "Á kim độc. Hợp chất GaAs dùng trong chất bán dẫn; từng được dùng làm thuốc trừ sâu.",
+	"Se", "Selenium", "78.971", 16, 4, "[Ar] 3d10 4s2 4p4", 2.55, "221 °C", "685 °C", "119 pm", "941 kJ/mol", "−2, +4, +6", "Phi kim cần với lượng rất nhỏ cho cơ thể. Dùng trong pin mặt trời, thủy tinh và dầu gội trị gàu.",
+	"Br", "Bromine", "79.904", 17, 4, "[Ar] 3d10 4s2 4p5", 2.96, "-7.2 °C", "58.8 °C", "114 pm", "1140 kJ/mol", "−1, +1, +3, +5", "Một trong hai nguyên tố ở thể lỏng ở nhiệt độ phòng. Dùng làm chất chống cháy và thuốc nhuộm.",
+	"Kr", "Krypton", "83.798", 18, 4, "[Ar] 3d10 4s2 4p6", 3.00, "-157.4 °C", "-153.4 °C", "88 pm", "1351 kJ/mol", "0, +2", "Khí hiếm. Dùng trong đèn huỳnh quang, đèn flash chụp ảnh và một số loại laze.",
+	"Rb", "Rubidium", "85.468", 1, 5, "[Kr] 5s1", 0.82, "39.3 °C", "688 °C", "248 pm", "403 kJ/mol", "+1", "Kim loại kiềm rất mềm. Dùng trong đồng hồ nguyên tử và nghiên cứu vật lý lượng tử.",
+	"Sr", "Strontium", "87.62", 2, 5, "[Kr] 5s2", 0.95, "777 °C", "1377 °C", "215 pm", "549 kJ/mol", "+2", "Cho ngọn lửa đỏ thẫm, dùng trong pháo hoa và đèn tín hiệu.",
+	"Y", "Yttrium", "88.906", 3, 5, "[Kr] 4d1 5s2", 1.22, "1526 °C", "3345 °C", "180 pm", "600 kJ/mol", "+3", "Dùng trong đèn LED trắng (YAG), laze và vật liệu siêu dẫn nhiệt độ cao.",
+	"Zr", "Zirconium", "91.224", 4, 5, "[Kr] 4d2 5s2", 1.33, "1855 °C", "4409 °C", "160 pm", "640 kJ/mol", "+4", "Chống ăn mòn và ít hấp thụ neutron. Dùng làm vỏ bọc nhiên liệu trong lò phản ứng hạt nhân.",
+	"Nb", "Niobium", "92.906", 5, 5, "[Kr] 4d4 5s1", 1.6, "2477 °C", "4744 °C", "146 pm", "652 kJ/mol", "+3, +5", "Dùng trong thép hợp kim bền và dây siêu dẫn của nam châm máy MRI.",
+	"Mo", "Molybdenum", "95.95", 6, 5, "[Kr] 4d5 5s1", 2.16, "2623 °C", "4639 °C", "139 pm", "684 kJ/mol", "+4, +6", "Nóng chảy ở nhiệt độ rất cao. Dùng làm thép hợp kim bền và xúc tác lọc dầu.",
+	"Tc", "Technetium", "98", 7, 5, "[Kr] 4d5 5s2", 1.9, "2157 °C", "4265 °C", "136 pm", "702 kJ/mol", "+4, +7", "Nguyên tố đầu tiên được tạo ra nhân tạo. Đồng vị Tc-99m dùng nhiều trong chẩn đoán y học hạt nhân.",
+	"Ru", "Ruthenium", "101.07", 8, 5, "[Kr] 4d7 5s1", 2.2, "2334 °C", "4150 °C", "134 pm", "710 kJ/mol", "+3, +4", "Kim loại họ platin. Dùng làm tiếp điểm điện cứng và chất xúc tác.",
+	"Rh", "Rhodium", "102.91", 9, 5, "[Kr] 4d8 5s1", 2.28, "1964 °C", "3695 °C", "134 pm", "720 kJ/mol", "+3", "Kim loại quý hiếm. Dùng trong bộ xúc tác khí thải ô tô và mạ đồ trang sức.",
+	"Pd", "Palladium", "106.42", 10, 5, "[Kr] 4d10", 2.20, "1554.9 °C", "2963 °C", "137 pm", "804 kJ/mol", "+2, +4", "Hấp thụ nhiều hiđro. Dùng trong bộ xúc tác khí thải, điện tử và nha khoa.",
+	"Ag", "Silver", "107.87", 11, 5, "[Kr] 4d10 5s1", 1.93, "961.8 °C", "2162 °C", "144 pm", "731 kJ/mol", "+1", "Dẫn điện và nhiệt tốt nhất trong các kim loại. Dùng làm trang sức, gương và tiếp điểm điện.",
+	"Cd", "Cadmium", "112.41", 12, 5, "[Kr] 4d10 5s2", 1.69, "321.1 °C", "767 °C", "151 pm", "868 kJ/mol", "+2", "Kim loại độc. Dùng trong pin Ni-Cd và mạ kim loại, nay bị hạn chế vì độc tính.",
+	"In", "Indium", "114.82", 13, 5, "[Kr] 4d10 5s2 5p1", 1.78, "156.6 °C", "2072 °C", "167 pm", "558 kJ/mol", "+3, +1", "Kim loại mềm. Hợp chất ITO tạo lớp dẫn điện trong suốt cho màn hình cảm ứng.",
+	"Sn", "Tin", "118.71", 14, 5, "[Kr] 4d10 5s2 5p2", 1.96, "231.9 °C", "2602 °C", "140 pm", "709 kJ/mol", "+2, +4", "Dùng mạ hộp thiếc, làm thiếc hàn và đồng thanh.",
+	"Sb", "Antimony", "121.76", 15, 5, "[Kr] 4d10 5s2 5p3", 2.05, "630.6 °C", "1587 °C", "140 pm", "834 kJ/mol", "−3, +3, +5", "Dùng làm hợp kim cứng với chì, chất chống cháy và chất bán dẫn.",
+	"Te", "Tellurium", "127.6", 16, 5, "[Kr] 4d10 5s2 5p4", 2.1, "449.5 °C", "988 °C", "142 pm", "869 kJ/mol", "−2, +4, +6", "Dùng trong pin mặt trời CdTe và vật liệu nhiệt điện.",
+	"I", "Iodine", "126.9", 17, 5, "[Kr] 4d10 5s2 5p5", 2.66, "113.7 °C", "184.3 °C", "133 pm", "1008 kJ/mol", "−1, +1, +5, +7", "Cần cho hormone tuyến giáp. Dùng khử trùng và bổ sung vào muối iot.",
+	"Xe", "Xenon", "131.29", 18, 5, "[Kr] 4d10 5s2 5p6", 2.6, "-111.8 °C", "-108.1 °C", "108 pm", "1170 kJ/mol", "0, +2, +4, +6", "Khí hiếm nặng. Dùng trong đèn pha xenon và động cơ ion của tàu vũ trụ.",
+	"Cs", "Caesium", "132.91", 1, 6, "[Xe] 6s1", 0.79, "28.4 °C", "671 °C", "265 pm", "376 kJ/mol", "+1", "Kim loại mềm, phản ứng cực mạnh. Dao động của nguyên tử xesi dùng để định nghĩa giây trong đồng hồ nguyên tử.",
+	"Ba", "Barium", "137.33", 2, 6, "[Xe] 6s2", 0.89, "727 °C", "1845 °C", "222 pm", "503 kJ/mol", "+2", "Bari sunfat dùng làm chất cản quang khi chụp X-quang; cho ngọn lửa màu lục trong pháo hoa.",
+	"La", "Lanthanum", "138.91", 4, 9, "[Xe] 5d1 6s2", 1.10, "920 °C", "3464 °C", "187 pm", "538 kJ/mol", "+3", "Dùng trong ống kính máy ảnh, pin NiMH và xúc tác lọc dầu.",
+	"Ce", "Cerium", "140.12", 5, 9, "[Xe] 4f1 5d1 6s2", 1.12, "795 °C", "3443 °C", "182 pm", "534 kJ/mol", "+3, +4", "Nguyên tố đất hiếm dồi dào nhất. Dùng đánh bóng kính và làm đá lửa bật lửa.",
+	"Pr", "Praseodymium", "140.91", 6, 9, "[Xe] 4f3 6s2", 1.13, "935 °C", "3520 °C", "183 pm", "527 kJ/mol", "+3", "Tạo màu vàng lục cho thủy tinh và gốm; có trong nam châm đất hiếm.",
+	"Nd", "Neodymium", "144.24", 7, 9, "[Xe] 4f4 6s2", 1.14, "1024 °C", "3074 °C", "182 pm", "533 kJ/mol", "+3", "Tạo ra loại nam châm mạnh nhất (NdFeB), dùng trong động cơ điện và tai nghe.",
+	"Pm", "Promethium", "145", 8, 9, "[Xe] 4f5 6s2", 1.13, "1042 °C", "3000 °C", "181 pm", "540 kJ/mol", "+3", "Phóng xạ, không có đồng vị bền. Dùng trong pin hạt nhân nhỏ và sơn phát sáng.",
+	"Sm", "Samarium", "150.36", 9, 9, "[Xe] 4f6 6s2", 1.17, "1072 °C", "1794 °C", "180 pm", "545 kJ/mol", "+2, +3", "Dùng làm nam châm samari-coban chịu nhiệt cao và thanh điều khiển lò phản ứng.",
+	"Eu", "Europium", "151.96", 10, 9, "[Xe] 4f7 6s2", 1.2, "826 °C", "1529 °C", "180 pm", "547 kJ/mol", "+2, +3", "Phát quang đỏ và xanh. Dùng trong màn hình, đèn huỳnh quang và mực chống giả trên tiền euro.",
+	"Gd", "Gadolinium", "157.25", 11, 9, "[Xe] 4f7 5d1 6s2", 1.2, "1312 °C", "3273 °C", "180 pm", "593 kJ/mol", "+3", "Từ tính mạnh. Dùng làm thuốc cản quang khi chụp MRI và hấp thụ neutron.",
+	"Tb", "Terbium", "158.93", 12, 9, "[Xe] 4f9 6s2", 1.1, "1356 °C", "3230 °C", "177 pm", "566 kJ/mol", "+3", "Phát sáng màu lục, dùng trong đèn huỳnh quang và màn hình.",
+	"Dy", "Dysprosium", "162.5", 13, 9, "[Xe] 4f10 6s2", 1.22, "1407 °C", "2567 °C", "178 pm", "573 kJ/mol", "+3", "Thêm vào nam châm NdFeB để chịu nhiệt tốt hơn; dùng trong tuabin gió và xe điện.",
+	"Ho", "Holmium", "164.93", 14, 9, "[Xe] 4f11 6s2", 1.23, "1461 °C", "2720 °C", "176 pm", "581 kJ/mol", "+3", "Có từ tính mạnh nhất trong các nguyên tố. Dùng trong laze y học và nam châm.",
+	"Er", "Erbium", "167.26", 15, 9, "[Xe] 4f12 6s2", 1.24, "1529 °C", "2868 °C", "175 pm", "589 kJ/mol", "+3", "Dùng trong bộ khuếch đại cáp quang và laze; tạo màu hồng cho thủy tinh.",
+	"Tm", "Thulium", "168.93", 16, 9, "[Xe] 4f13 6s2", 1.25, "1545 °C", "1950 °C", "174 pm", "597 kJ/mol", "+3", "Dùng trong laze y tế và thiết bị X-quang xách tay.",
+	"Yb", "Ytterbium", "173.05", 17, 9, "[Xe] 4f14 6s2", 1.1, "824 °C", "1196 °C", "194 pm", "603 kJ/mol", "+2, +3", "Dùng trong đồng hồ nguyên tử quang học và laze sợi quang.",
+	"Lu", "Lutetium", "174.97", 18, 9, "[Xe] 4f14 5d1 6s2", 1.27, "1652 °C", "3402 °C", "174 pm", "524 kJ/mol", "+3", "Hiếm và đắt. Dùng trong máy chụp PET và chất xúc tác lọc dầu.",
+	"Hf", "Hafnium", "178.49", 4, 6, "[Xe] 4f14 5d2 6s2", 1.3, "2233 °C", "4603 °C", "159 pm", "659 kJ/mol", "+4", "Hấp thụ neutron tốt, dùng làm thanh điều khiển lò hạt nhân và trong chip vi xử lý.",
+	"Ta", "Tantalum", "180.95", 5, 6, "[Xe] 4f14 5d3 6s2", 1.5, "3017 °C", "5458 °C", "146 pm", "761 kJ/mol", "+5", "Rất bền với ăn mòn. Dùng trong tụ điện của điện thoại và dụng cụ phẫu thuật.",
+	"W", "Tungsten", "183.84", 6, 6, "[Xe] 4f14 5d4 6s2", 2.36, "3422 °C", "5555 °C", "139 pm", "770 kJ/mol", "+4, +6", "Có nhiệt độ nóng chảy cao nhất trong các kim loại. Dùng làm dây tóc bóng đèn và mũi khoan.",
+	"Re", "Rhenium", "186.21", 7, 6, "[Xe] 4f14 5d5 6s2", 1.9, "3186 °C", "5596 °C", "137 pm", "760 kJ/mol", "+4, +6, +7", "Một trong những kim loại nóng chảy cao nhất. Dùng trong động cơ phản lực và xúc tác.",
+	"Os", "Osmium", "190.23", 8, 6, "[Xe] 4f14 5d6 6s2", 2.2, "3033 °C", "5012 °C", "135 pm", "840 kJ/mol", "+4, +6, +8", "Một trong hai nguyên tố đặc nhất. Dùng làm hợp kim rất cứng, ngòi bút và tiếp điểm.",
+	"Ir", "Iridium", "192.22", 9, 6, "[Xe] 4f14 5d7 6s2", 2.20, "2446 °C", "4428 °C", "136 pm", "880 kJ/mol", "+3, +4", "Rất bền ăn mòn. Dùng trong bugi cao cấp; hợp kim platin-iridi từng làm chuẩn mét và kilôgam.",
+	"Pt", "Platinum", "195.08", 10, 6, "[Xe] 4f14 5d9 6s1", 2.28, "1768.3 °C", "3825 °C", "139 pm", "870 kJ/mol", "+2, +4", "Kim loại quý, bền hóa học. Dùng làm trang sức, xúc tác khí thải và thuốc chống ung thư cisplatin.",
+	"Au", "Gold", "196.97", 11, 6, "[Xe] 4f14 5d10 6s1", 2.54, "1064.2 °C", "2856 °C", "144 pm", "890 kJ/mol", "+1, +3", "Kim loại quý màu vàng, không gỉ. Dùng làm trang sức, dự trữ giá trị và linh kiện điện tử.",
+	"Hg", "Mercury", "200.59", 12, 6, "[Xe] 4f14 5d10 6s2", 2.00, "-38.83 °C", "356.7 °C", "151 pm", "1007 kJ/mol", "+1, +2", "Kim loại duy nhất ở thể lỏng ở nhiệt độ phòng. Từng dùng trong nhiệt kế; rất độc.",
+	"Tl", "Thallium", "204.38", 13, 6, "[Xe] 4f14 5d10 6s2 6p1", 1.62, "304 °C", "1473 °C", "170 pm", "589 kJ/mol", "+1, +3", "Kim loại mềm và rất độc. Dùng trong bộ dò hồng ngoại và một số thiết bị chẩn đoán tim.",
+	"Pb", "Lead", "207.2", 14, 6, "[Xe] 4f14 5d10 6s2 6p2", 2.33, "327.5 °C", "1749 °C", "175 pm", "716 kJ/mol", "+2, +4", "Nặng, mềm và độc. Dùng trong ắc quy axit-chì và làm tấm chắn bức xạ.",
+	"Bi", "Bismuth", "208.98", 15, 6, "[Xe] 4f14 5d10 6s2 6p3", 2.02, "271.4 °C", "1564 °C", "155 pm", "703 kJ/mol", "+3, +5", "Ít độc hơn các kim loại nặng khác. Dùng trong thuốc dạ dày và hợp kim nóng chảy ở nhiệt độ thấp.",
+	"Po", "Polonium", "209", 16, 6, "[Xe] 4f14 5d10 6s2 6p4", 2.0, "254 °C", "962 °C", "167 pm", "812 kJ/mol", "−2, +2, +4", "Phóng xạ rất mạnh. Marie Curie đặt tên theo quê hương Ba Lan của bà.",
+	"At", "Astatine", "210", 17, 6, "[Xe] 4f14 5d10 6s2 6p5", 2.2, "302 °C", "337 °C", "150 pm", "899 kJ/mol", "−1, +1", "Nguyên tố tự nhiên hiếm nhất, phóng xạ. Đang được nghiên cứu cho điều trị ung thư.",
+	"Rn", "Radon", "222", 18, 6, "[Xe] 4f14 5d10 6s2 6p6", 2.2, "-71 °C", "-61.7 °C", "120 pm", "1037 kJ/mol", "0, +2", "Khí phóng xạ sinh ra từ sự phân rã của urani. Tích tụ trong nhà kín là nguy cơ gây ung thư phổi.",
+	"Fr", "Francium", "223", 1, 7, "[Rn] 7s1", 0.7, "27 °C", "677 °C", "—", "380 kJ/mol", "+1", "Kim loại kiềm cực hiếm và phóng xạ; đồng vị bền nhất chỉ có chu kỳ bán rã khoảng 22 phút.",
+	"Ra", "Radium", "226", 2, 7, "[Rn] 7s2", 0.9, "700 °C", "1737 °C", "223 pm", "509 kJ/mol", "+2", "Phóng xạ. Từng dùng làm sơn dạ quang và trong xạ trị.",
+	"Ac", "Actinium", "227", 4, 10, "[Rn] 6d1 7s2", 1.1, "1050 °C", "3200 °C", "188 pm", "499 kJ/mol", "+3", "Phóng xạ, phát ánh sáng xanh trong bóng tối. Dùng trong nghiên cứu y học hạt nhân.",
+	"Th", "Thorium", "232.04", 5, 10, "[Rn] 6d2 7s2", 1.3, "1750 °C", "4788 °C", "180 pm", "587 kJ/mol", "+4", "Phóng xạ yếu, dồi dào hơn urani. Được nghiên cứu làm nhiên liệu hạt nhân.",
+	"Pa", "Protactinium", "231.04", 6, 10, "[Rn] 5f2 6d1 7s2", 1.5, "1568 °C", "4027 °C", "161 pm", "568 kJ/mol", "+4, +5", "Phóng xạ, rất hiếm. Chủ yếu dùng trong nghiên cứu khoa học.",
+	"U", "Uranium", "238.03", 7, 10, "[Rn] 5f3 6d1 7s2", 1.38, "1132 °C", "4131 °C", "156 pm", "598 kJ/mol", "+3, +4, +5, +6", "Nhiên liệu của lò phản ứng hạt nhân; đồng vị U-235 có thể phân hạch.",
+	"Np", "Neptunium", "237", 8, 10, "[Rn] 5f4 6d1 7s2", 1.36, "644 °C", "3902 °C", "155 pm", "605 kJ/mol", "+3, +4, +5, +6", "Nguyên tố siêu urani đầu tiên được tổng hợp, đặt tên theo hành tinh Hải Vương (Neptune).",
+	"Pu", "Plutonium", "244", 9, 10, "[Rn] 5f6 7s2", 1.28, "640 °C", "3228 °C", "159 pm", "585 kJ/mol", "+3, +4, +5, +6", "Dùng trong vũ khí hạt nhân và trong pin hạt nhân cho tàu thăm dò vũ trụ.",
+	"Am", "Americium", "243", 10, 10, "[Rn] 5f7 7s2", 1.3, "1176 °C", "2011 °C", "173 pm", "578 kJ/mol", "+3, +4, +5, +6", "Có trong đầu báo khói ion hóa gia dụng (Am-241).",
+	"Cm", "Curium", "247", 11, 10, "[Rn] 5f7 6d1 7s2", 1.3, "1340 °C", "3110 °C", "174 pm", "581 kJ/mol", "+3, +4", "Phóng xạ mạnh. Dùng trong máy phân tích APXS trên xe tự hành thăm dò sao Hỏa.",
+	"Bk", "Berkelium", "247", 12, 10, "[Rn] 5f9 7s2", 1.3, "986 °C", "2627 °C", "170 pm", "601 kJ/mol", "+3, +4", "Tổng hợp nhân tạo. Dùng làm bia để tổng hợp các nguyên tố nặng hơn.",
+	"Cf", "Californium", "251", 13, 10, "[Rn] 5f10 7s2", 1.3, "900 °C", "1470 °C", "186 pm", "608 kJ/mol", "+3, +2, +4", "Phát ra neutron mạnh. Dùng khởi động lò phản ứng và trong thăm dò dầu khí.",
+	"Es", "Einsteinium", "252", 14, 10, "[Rn] 5f11 7s2", 1.3, "860 °C", "996 °C", "186 pm", "619 kJ/mol", "+3, +2", "Chỉ tổng hợp được lượng rất nhỏ. Đặt theo Albert Einstein.",
+	"Fm", "Fermium", "257", 15, 10, "[Rn] 5f12 7s2", 1.3, "1527 °C", "—", "—", "627 kJ/mol", "+3, +2", "Chỉ tạo ra được lượng cực nhỏ. Đặt theo Enrico Fermi.",
+	"Md", "Mendelevium", "258", 16, 10, "[Rn] 5f13 7s2", 1.3, "827 °C", "—", "—", "635 kJ/mol", "+3, +2", "Đặt theo Dmitri Mendeleev, người xây dựng bảng tuần hoàn.",
+	"No", "Nobelium", "259", 17, 10, "[Rn] 5f14 7s2", 1.3, "827 °C", "—", "—", "642 kJ/mol", "+2, +3", "Mỗi lần chỉ tạo được vài nguyên tử. Đặt theo Alfred Nobel.",
+	"Lr", "Lawrencium", "266", 18, 10, "[Rn] 5f14 7s2 7p1", 1.3, "1627 °C", "—", "—", "470 kJ/mol", "+3", "Nguyên tố cuối của họ actini; chỉ nghiên cứu được trên vài nguyên tử.",
+	"Rf", "Rutherfordium", "267", 4, 7, "[Rn] 5f14 6d2 7s2", null, "—", "—", "—", "580 kJ/mol", "+4", "Nguyên tố siêu nặng, chỉ tổng hợp nhân tạo và tồn tại rất ngắn. Đặt theo Ernest Rutherford.",
+	"Db", "Dubnium", "268", 5, 7, "[Rn] 5f14 6d3 7s2", null, "—", "—", "—", "—", "+5", "Nguyên tố siêu nặng, tổng hợp nhân tạo. Đặt theo thị trấn Dubna của Nga.",
+	"Sg", "Seaborgium", "269", 6, 7, "[Rn] 5f14 6d4 7s2", null, "—", "—", "—", "—", "+6", "Nguyên tố siêu nặng, tổng hợp nhân tạo. Đặt theo Glenn Seaborg.",
+	"Bh", "Bohrium", "270", 7, 7, "[Rn] 5f14 6d5 7s2", null, "—", "—", "—", "—", "+7", "Nguyên tố siêu nặng, tổng hợp nhân tạo. Đặt theo Niels Bohr.",
+	"Hs", "Hassium", "277", 8, 7, "[Rn] 5f14 6d6 7s2", null, "—", "—", "—", "—", "+8", "Nguyên tố siêu nặng, tổng hợp nhân tạo. Đặt theo bang Hessen của Đức.",
+	"Mt", "Meitnerium", "278", 9, 7, "[Rn] 5f14 6d7 7s2", null, "—", "—", "—", "—", "—", "Nguyên tố siêu nặng, tổng hợp nhân tạo. Đặt theo nhà vật lý Lise Meitner.",
+	"Ds", "Darmstadtium", "281", 10, 7, "[Rn] 5f14 6d8 7s2", null, "—", "—", "—", "—", "—", "Nguyên tố siêu nặng, tổng hợp nhân tạo. Đặt theo thành phố Darmstadt của Đức.",
+	"Rg", "Roentgenium", "282", 11, 7, "[Rn] 5f14 6d9 7s2", null, "—", "—", "—", "—", "—", "Nguyên tố siêu nặng, tổng hợp nhân tạo. Đặt theo Wilhelm Röntgen, người phát hiện tia X.",
+	"Cn", "Copernicium", "285", 12, 7, "[Rn] 5f14 6d10 7s2", null, "—", "—", "—", "—", "+2", "Nguyên tố siêu nặng, tổng hợp nhân tạo. Đặt theo Nicolaus Copernicus.",
+	"Uut", "Ununtrium", "284", 13, 7, "[Rn] 5f14 6d10 7s2 7p1", null, "—", "—", "—", "—", "—", "Nguyên tố siêu nặng, tổng hợp nhân tạo, sau này được đặt tên là Nihonium (Nh).",
+	"Fl", "Flerovium", "289", 14, 7, "[Rn] 5f14 6d10 7s2 7p2", null, "—", "—", "—", "—", "—", "Nguyên tố siêu nặng, tổng hợp nhân tạo. Đặt theo Phòng thí nghiệm Flerov ở Dubna.",
+	"Uup", "Ununpentium", "288", 15, 7, "[Rn] 5f14 6d10 7s2 7p3", null, "—", "—", "—", "—", "—", "Nguyên tố siêu nặng, tổng hợp nhân tạo, sau này được đặt tên là Moscovium (Mc).",
+	"Lv", "Livermorium", "293", 16, 7, "[Rn] 5f14 6d10 7s2 7p4", null, "—", "—", "—", "—", "—", "Nguyên tố siêu nặng, tổng hợp nhân tạo. Đặt theo Phòng thí nghiệm Lawrence Livermore.",
+	"Uus", "Ununseptium", "294", 17, 7, "[Rn] 5f14 6d10 7s2 7p5", null, "—", "—", "—", "—", "—", "Nguyên tố siêu nặng, tổng hợp nhân tạo, sau này được đặt tên là Tennessine (Ts).",
+	"Uuo", "Ununoctium", "294", 18, 7, "[Rn] 5f14 6d10 7s2 7p6", null, "—", "—", "—", "—", "—", "Nguyên tố nặng nhất đã biết, tổng hợp nhân tạo. Sau này được đặt tên là Oganesson (Og)."
 ];
 
 var nameVi = {
@@ -1315,9 +1315,9 @@ function init() {
 
 	scene = new THREE.Scene();
 
-	for ( var i = 0; i < table.length; i += 12 ) {
+	for ( var i = 0; i < table.length; i += 13 ) {
 
-		var idx = i / 12;
+		var idx = i / 13;
 		var cat = elementCategories[ idx ];
 
 		var element = document.createElement( 'div' );
@@ -1357,7 +1357,8 @@ function init() {
 			boil: table[ i + 8 ],
 			radius: table[ i + 9 ],
 			ie: table[ i + 10 ],
-			note: table[ i + 11 ],
+			val: table[ i + 11 ],
+			note: table[ i + 12 ],
 			category: cat
 		} );
 
@@ -1477,7 +1478,6 @@ function init() {
 function shellsFromConfig( config ) {
 
 	var shells = [];
-
 	var tokens = config.split( ' ' );
 
 	for ( var t = 0; t < tokens.length; t ++ ) {
@@ -1504,7 +1504,7 @@ function shellsFromConfig( config ) {
 
 }
 
-function drawBohr( symbol, z, config, color ) {
+function drawBohr( z, config ) {
 
 	var shells = shellsFromConfig( config );
 	var n = shells.length;
@@ -1560,15 +1560,13 @@ function showPopup( data ) {
 	document.getElementById( 'popup-boil' ).textContent = data.boil;
 	document.getElementById( 'popup-radius' ).textContent = data.radius;
 	document.getElementById( 'popup-ie' ).textContent = data.ie;
-	document.getElementById( 'popup-val' ).textContent = '—';
+	document.getElementById( 'popup-val' ).textContent = data.val;
 
 	var catBadge = document.getElementById( 'popup-category' );
 	catBadge.textContent = categoryNames[ data.category ];
 	catBadge.style.backgroundColor = categoryColors[ data.category ];
 
-	var color = categoryColors[ data.category ];
-	document.getElementById( 'popup-bohr' ).innerHTML = drawBohr( data.symbol, data.number, data.config, color );
-
+	document.getElementById( 'popup-bohr' ).innerHTML = drawBohr( data.number, data.config );
 	document.getElementById( 'popup-note' ).textContent = data.note;
 
 	document.getElementById( 'popup' ).classList.add( 'show' );
