@@ -1080,147 +1080,147 @@ THREE.CSS3DRenderer = function () {
 
 
 var table = [
-	"H", "Hydrogen", "1.008", 1, 1,
-	"He", "Helium", "4.0026", 18, 1,
-	"Li", "Lithium", "6.94", 1, 2,
-	"Be", "Beryllium", "9.0122", 2, 2,
-	"B", "Boron", "10.81", 13, 2,
-	"C", "Carbon", "12.011", 14, 2,
-	"N", "Nitrogen", "14.007", 15, 2,
-	"O", "Oxygen", "15.999", 16, 2,
-	"F", "Fluorine", "18.998", 17, 2,
-	"Ne", "Neon", "20.180", 18, 2,
-	"Na", "Sodium", "22.990", 1, 3,
-	"Mg", "Magnesium", "24.305", 2, 3,
-	"Al", "Aluminium", "26.982", 13, 3,
-	"Si", "Silicon", "28.085", 14, 3,
-	"P", "Phosphorus", "30.974", 15, 3,
-	"S", "Sulfur", "32.06", 16, 3,
-	"Cl", "Chlorine", "35.45", 17, 3,
-	"Ar", "Argon", "39.948", 18, 3,
-	"K", "Potassium", "39.098", 1, 4,
-	"Ca", "Calcium", "40.078", 2, 4,
-	"Sc", "Scandium", "44.956", 3, 4,
-	"Ti", "Titanium", "47.867", 4, 4,
-	"V", "Vanadium", "50.942", 5, 4,
-	"Cr", "Chromium", "51.996", 6, 4,
-	"Mn", "Manganese", "54.938", 7, 4,
-	"Fe", "Iron", "55.845", 8, 4,
-	"Co", "Cobalt", "58.933", 9, 4,
-	"Ni", "Nickel", "58.693", 10, 4,
-	"Cu", "Copper", "63.546", 11, 4,
-	"Zn", "Zinc", "65.38", 12, 4,
-	"Ga", "Gallium", "69.723", 13, 4,
-	"Ge", "Germanium", "72.630", 14, 4,
-	"As", "Arsenic", "74.922", 15, 4,
-	"Se", "Selenium", "78.971", 16, 4,
-	"Br", "Bromine", "79.904", 17, 4,
-	"Kr", "Krypton", "83.798", 18, 4,
-	"Rb", "Rubidium", "85.468", 1, 5,
-	"Sr", "Strontium", "87.62", 2, 5,
-	"Y", "Yttrium", "88.906", 3, 5,
-	"Zr", "Zirconium", "91.224", 4, 5,
-	"Nb", "Niobium", "92.906", 5, 5,
-	"Mo", "Molybdenum", "95.95", 6, 5,
-	"Tc", "Technetium", "(98)", 7, 5,
-	"Ru", "Ruthenium", "101.07", 8, 5,
-	"Rh", "Rhodium", "102.91", 9, 5,
-	"Pd", "Palladium", "106.42", 10, 5,
-	"Ag", "Silver", "107.87", 11, 5,
-	"Cd", "Cadmium", "112.41", 12, 5,
-	"In", "Indium", "114.82", 13, 5,
-	"Sn", "Tin", "118.71", 14, 5,
-	"Sb", "Antimony", "121.76", 15, 5,
-	"Te", "Tellurium", "127.60", 16, 5,
-	"I", "Iodine", "126.90", 17, 5,
-	"Xe", "Xenon", "131.29", 18, 5,
-	"Cs", "Caesium", "132.91", 1, 6,
-	"Ba", "Barium", "137.33", 2, 6,
-	"La", "Lanthanum", "138.91", 4, 9,
-	"Ce", "Cerium", "140.12", 5, 9,
-	"Pr", "Praseodymium", "140.91", 6, 9,
-	"Nd", "Neodymium", "144.24", 7, 9,
-	"Pm", "Promethium", "(145)", 8, 9,
-	"Sm", "Samarium", "150.36", 9, 9,
-	"Eu", "Europium", "151.96", 10, 9,
-	"Gd", "Gadolinium", "157.25", 11, 9,
-	"Tb", "Terbium", "158.93", 12, 9,
-	"Dy", "Dysprosium", "162.50", 13, 9,
-	"Ho", "Holmium", "164.93", 14, 9,
-	"Er", "Erbium", "167.26", 15, 9,
-	"Tm", "Thulium", "168.93", 16, 9,
-	"Yb", "Ytterbium", "173.05", 17, 9,
-	"Lu", "Lutetium", "174.97", 18, 9,
-	"Hf", "Hafnium", "178.49", 4, 6,
-	"Ta", "Tantalum", "180.95", 5, 6,
-	"W", "Tungsten", "183.84", 6, 6,
-	"Re", "Rhenium", "186.21", 7, 6,
-	"Os", "Osmium", "190.23", 8, 6,
-	"Ir", "Iridium", "192.22", 9, 6,
-	"Pt", "Platinum", "195.08", 10, 6,
-	"Au", "Gold", "196.97", 11, 6,
-	"Hg", "Mercury", "200.59", 12, 6,
-	"Tl", "Thallium", "204.38", 13, 6,
-	"Pb", "Lead", "207.2", 14, 6,
-	"Bi", "Bismuth", "208.98", 15, 6,
-	"Po", "Polonium", "(209)", 16, 6,
-	"At", "Astatine", "(210)", 17, 6,
-	"Rn", "Radon", "(222)", 18, 6,
-	"Fr", "Francium", "(223)", 1, 7,
-	"Ra", "Radium", "(226)", 2, 7,
-	"Ac", "Actinium", "(227)", 4, 10,
-	"Th", "Thorium", "232.04", 5, 10,
-	"Pa", "Protactinium", "231.04", 6, 10,
-	"U", "Uranium", "238.03", 7, 10,
-	"Np", "Neptunium", "(237)", 8, 10,
-	"Pu", "Plutonium", "(244)", 9, 10,
-	"Am", "Americium", "(243)", 10, 10,
-	"Cm", "Curium", "(247)", 11, 10,
-	"Bk", "Berkelium", "(247)", 12, 10,
-	"Cf", "Californium", "(251)", 13, 10,
-	"Es", "Einstenium", "(252)", 14, 10,
-	"Fm", "Fermium", "(257)", 15, 10,
-	"Md", "Mendelevium", "(258)", 16, 10,
-	"No", "Nobelium", "(259)", 17, 10,
-	"Lr", "Lawrencium", "(262)", 18, 10,
-	"Rf", "Rutherfordium", "(267)", 4, 7,
-	"Db", "Dubnium", "(268)", 5, 7,
-	"Sg", "Seaborgium", "(271)", 6, 7,
-	"Bh", "Bohrium", "(272)", 7, 7,
-	"Hs", "Hassium", "(270)", 8, 7,
-	"Mt", "Meitnerium", "(276)", 9, 7,
-	"Ds", "Darmstadium", "(281)", 10, 7,
-	"Rg", "Roentgenium", "(280)", 11, 7,
-	"Cn", "Copernicium", "(285)", 12, 7,
-	"Uut", "Ununtrium", "(284)", 13, 7,
-	"Fl", "Flerovium", "(289)", 14, 7,
-	"Uup", "Ununpentium", "(288)", 15, 7,
-	"Lv", "Livermorium", "(293)", 16, 7,
-	"Uus", "Ununseptium", "(294)", 17, 7,
-	"Uuo", "Ununoctium", "(294)", 18, 7
+	"H", "Hydrogen", "1.008", 1, 1, "1s1", 2.20, "-259.16 °C", "-252.87 °C", "53 pm", "1312 kJ/mol", "Nguyên tố nhẹ nhất và nhiều nhất vũ trụ. Là nhiên liệu của các ngôi sao, dùng để sản xuất amoniac và trong pin nhiên liệu.",
+	"He", "Helium", "4.0026", 18, 1, "1s2", null, "-272.2 °C", "-268.93 °C", "31 pm", "2372 kJ/mol", "Khí hiếm trơ, nhẹ thứ hai. Dùng bơm khinh khí cầu và làm lạnh nam châm siêu dẫn của máy MRI.",
+	"Li", "Lithium", "6.94", 1, 2, "[He] 2s1", 0.98, "180.5 °C", "1342 °C", "152 pm", "520 kJ/mol", "Kim loại nhẹ nhất. Thành phần chính của pin lithium-ion trong điện thoại và xe điện.",
+	"Be", "Beryllium", "9.0122", 2, 2, "[He] 2s2", 1.57, "1287 °C", "2470 °C", "112 pm", "899 kJ/mol", "Kim loại nhẹ, cứng, gần như trong suốt với tia X. Dùng làm cửa sổ ống X-quang và hợp kim đồng-beri.",
+	"B", "Boron", "10.81", 13, 2, "[He] 2s2 2p1", 2.04, "2076 °C", "3927 °C", "87 pm", "801 kJ/mol", "Á kim rất cứng. Có trong thủy tinh borosilicat, borax và vật liệu hấp thụ neutron.",
+	"C", "Carbon", "12.011", 14, 2, "[He] 2s2 2p2", 2.55, "3550 °C", "4027 °C", "67 pm", "1086 kJ/mol", "Nền tảng của hóa học hữu cơ và sự sống. Tồn tại ở dạng kim cương, than chì và graphene.",
+	"N", "Nitrogen", "14.007", 15, 2, "[He] 2s2 2p3", 3.04, "-210 °C", "-195.79 °C", "56 pm", "1402 kJ/mol", "Chiếm khoảng 78% thể tích khí quyển. Thiết yếu cho protein, ADN và phân bón.",
+	"O", "Oxygen", "15.999", 16, 2, "[He] 2s2 2p4", 3.44, "-218.79 °C", "-182.95 °C", "48 pm", "1314 kJ/mol", "Chiếm khoảng 21% khí quyển và gần một nửa khối lượng vỏ Trái Đất. Cần cho hô hấp và sự cháy.",
+	"F", "Fluorine", "18.998", 17, 2, "[He] 2s2 2p5", 3.98, "-219.67 °C", "-188.11 °C", "42 pm", "1681 kJ/mol", "Có độ âm điện lớn nhất trong các nguyên tố. Có trong kem đánh răng (florua) và nhựa teflon.",
+	"Ne", "Neon", "20.18", 18, 2, "[He] 2s2 2p6", null, "-248.59 °C", "-246.08 °C", "38 pm", "2081 kJ/mol", "Khí hiếm phát sáng đỏ cam khi có dòng điện chạy qua, dùng trong đèn neon quảng cáo.",
+	"Na", "Sodium", "22.99", 1, 3, "[Ne] 3s1", 0.93, "97.8 °C", "883 °C", "186 pm", "496 kJ/mol", "Kim loại mềm, phản ứng mạnh với nước. Là thành phần của muối ăn (NaCl).",
+	"Mg", "Magnesium", "24.305", 2, 3, "[Ne] 3s2", 1.31, "650 °C", "1090 °C", "160 pm", "738 kJ/mol", "Kim loại nhẹ, cháy sáng chói. Có trong diệp lục của thực vật và trong các hợp kim nhẹ.",
+	"Al", "Aluminium", "26.982", 13, 3, "[Ne] 3s2 3p1", 1.61, "660.3 °C", "2519 °C", "143 pm", "578 kJ/mol", "Kim loại nhẹ, bền, phổ biến nhất trong vỏ Trái Đất. Dùng làm vỏ máy bay, lon nước, dây điện cao thế.",
+	"Si", "Silicon", "28.085", 14, 3, "[Ne] 3s2 3p2", 1.90, "1414 °C", "3265 °C", "117 pm", "786 kJ/mol", "Nền tảng của chip bán dẫn và pin mặt trời. Cát và thủy tinh chứa silic đioxit.",
+	"P", "Phosphorus", "30.974", 15, 3, "[Ne] 3s2 3p3", 2.19, "44.15 °C", "280.5 °C", "110 pm", "1012 kJ/mol", "Có trong ADN, ATP và xương. Dùng làm phân bón và đầu que diêm (dạng photpho đỏ).",
+	"S", "Sulfur", "32.06", 16, 3, "[Ne] 3s2 3p4", 2.58, "115.21 °C", "444.6 °C", "104 pm", "1000 kJ/mol", "Phi kim màu vàng. Dùng để sản xuất axit sunfuric và lưu hóa cao su.",
+	"Cl", "Chlorine", "35.45", 17, 3, "[Ne] 3s2 3p5", 3.16, "-101.5 °C", "-34.04 °C", "99 pm", "1251 kJ/mol", "Khí màu vàng lục, độc. Dùng khử trùng nước và sản xuất nhựa PVC.",
+	"Ar", "Argon", "39.948", 18, 3, "[Ne] 3s2 3p6", null, "-189.35 °C", "-185.85 °C", "71 pm", "1521 kJ/mol", "Khí hiếm chiếm khoảng 0,93% khí quyển. Dùng làm khí bảo vệ khi hàn và nạp trong bóng đèn.",
+	"K", "Potassium", "39.098", 1, 4, "[Ar] 4s1", 0.82, "63.5 °C", "759 °C", "227 pm", "419 kJ/mol", "Kim loại kiềm mềm. Cần cho hoạt động của thần kinh và cơ; có trong phân bón.",
+	"Ca", "Calcium", "40.078", 2, 4, "[Ar] 4s2", 1.00, "842 °C", "1484 °C", "197 pm", "590 kJ/mol", "Có trong xương, răng và vỏ sò. Dùng làm vôi, xi măng và thạch cao.",
+	"Sc", "Scandium", "44.956", 3, 4, "[Ar] 3d1 4s2", 1.36, "1541 °C", "2836 °C", "162 pm", "633 kJ/mol", "Kim loại hiếm. Hợp kim nhôm-scandi dùng cho máy bay và dụng cụ thể thao.",
+	"Ti", "Titanium", "47.867", 4, 4, "[Ar] 3d2 4s2", 1.54, "1668 °C", "3287 °C", "147 pm", "659 kJ/mol", "Kim loại nhẹ, bền, chống ăn mòn. Dùng trong máy bay, khớp nhân tạo; TiO₂ là bột màu trắng.",
+	"V", "Vanadium", "50.942", 5, 4, "[Ar] 3d3 4s2", 1.63, "1910 °C", "3407 °C", "134 pm", "651 kJ/mol", "Dùng làm thép hợp kim cứng và bền (thép vanadi), và trong pin lưu trữ năng lượng.",
+	"Cr", "Chromium", "51.996", 6, 4, "[Ar] 3d5 4s1", 1.66, "1907 °C", "2671 °C", "128 pm", "653 kJ/mol", "Kim loại cứng, sáng bóng. Dùng mạ crom và là thành phần của thép không gỉ.",
+	"Mn", "Manganese", "54.938", 7, 4, "[Ar] 3d5 4s2", 1.55, "1246 °C", "2061 °C", "127 pm", "717 kJ/mol", "Dùng sản xuất thép và pin kiềm. Cần cho nhiều enzyme trong cơ thể.",
+	"Fe", "Iron", "55.845", 8, 4, "[Ar] 3d6 4s2", 1.83, "1538 °C", "2861 °C", "126 pm", "762 kJ/mol", "Kim loại phổ biến nhất trong lõi Trái Đất. Là thành phần chính của thép và của hemoglobin trong máu.",
+	"Co", "Cobalt", "58.933", 9, 4, "[Ar] 3d7 4s2", 1.88, "1495 °C", "2927 °C", "125 pm", "760 kJ/mol", "Kim loại có từ tính. Dùng trong pin, hợp kim siêu bền; vitamin B12 chứa coban.",
+	"Ni", "Nickel", "58.693", 10, 4, "[Ar] 3d8 4s2", 1.91, "1455 °C", "2913 °C", "124 pm", "737 kJ/mol", "Chống ăn mòn tốt. Dùng mạ kim loại, làm thép không gỉ, tiền xu và pin.",
+	"Cu", "Copper", "63.546", 11, 4, "[Ar] 3d10 4s1", 1.90, "1084.6 °C", "2562 °C", "128 pm", "745 kJ/mol", "Dẫn điện và nhiệt tốt. Dùng làm dây điện, đồng thau (với kẽm) và đồng thanh (với thiếc).",
+	"Zn", "Zinc", "65.38", 12, 4, "[Ar] 3d10 4s2", 1.65, "419.5 °C", "907 °C", "134 pm", "906 kJ/mol", "Dùng mạ chống gỉ cho thép (tôn mạ kẽm), làm đồng thau và pin.",
+	"Ga", "Gallium", "69.723", 13, 4, "[Ar] 3d10 4s2 4p1", 1.81, "29.76 °C", "2204 °C", "135 pm", "579 kJ/mol", "Kim loại nóng chảy ngay trong lòng bàn tay. Dùng trong đèn LED và chip GaAs.",
+	"Ge", "Germanium", "72.63", 14, 4, "[Ar] 3d10 4s2 4p2", 2.01, "938.3 °C", "2833 °C", "122 pm", "762 kJ/mol", "Á kim bán dẫn, từng dùng trong những transistor đầu tiên. Dùng trong cáp quang và kính hồng ngoại.",
+	"As", "Arsenic", "74.922", 15, 4, "[Ar] 3d10 4s2 4p3", 2.18, "817 °C", "614 °C", "120 pm", "947 kJ/mol", "Á kim độc. Hợp chất GaAs dùng trong chất bán dẫn; từng được dùng làm thuốc trừ sâu.",
+	"Se", "Selenium", "78.971", 16, 4, "[Ar] 3d10 4s2 4p4", 2.55, "221 °C", "685 °C", "119 pm", "941 kJ/mol", "Phi kim cần với lượng rất nhỏ cho cơ thể. Dùng trong pin mặt trời, thủy tinh và dầu gội trị gàu.",
+	"Br", "Bromine", "79.904", 17, 4, "[Ar] 3d10 4s2 4p5", 2.96, "-7.2 °C", "58.8 °C", "114 pm", "1140 kJ/mol", "Một trong hai nguyên tố ở thể lỏng ở nhiệt độ phòng. Dùng làm chất chống cháy và thuốc nhuộm.",
+	"Kr", "Krypton", "83.798", 18, 4, "[Ar] 3d10 4s2 4p6", 3.00, "-157.4 °C", "-153.4 °C", "88 pm", "1351 kJ/mol", "Khí hiếm. Dùng trong đèn huỳnh quang, đèn flash chụp ảnh và một số loại laze.",
+	"Rb", "Rubidium", "85.468", 1, 5, "[Kr] 5s1", 0.82, "39.3 °C", "688 °C", "248 pm", "403 kJ/mol", "Kim loại kiềm rất mềm. Dùng trong đồng hồ nguyên tử và nghiên cứu vật lý lượng tử.",
+	"Sr", "Strontium", "87.62", 2, 5, "[Kr] 5s2", 0.95, "777 °C", "1377 °C", "215 pm", "549 kJ/mol", "Cho ngọn lửa đỏ thẫm, dùng trong pháo hoa và đèn tín hiệu.",
+	"Y", "Yttrium", "88.906", 3, 5, "[Kr] 4d1 5s2", 1.22, "1526 °C", "3345 °C", "180 pm", "600 kJ/mol", "Dùng trong đèn LED trắng (YAG), laze và vật liệu siêu dẫn nhiệt độ cao.",
+	"Zr", "Zirconium", "91.224", 4, 5, "[Kr] 4d2 5s2", 1.33, "1855 °C", "4409 °C", "160 pm", "640 kJ/mol", "Chống ăn mòn và ít hấp thụ neutron. Dùng làm vỏ bọc nhiên liệu trong lò phản ứng hạt nhân.",
+	"Nb", "Niobium", "92.906", 5, 5, "[Kr] 4d4 5s1", 1.6, "2477 °C", "4744 °C", "146 pm", "652 kJ/mol", "Dùng trong thép hợp kim bền và dây siêu dẫn của nam châm máy MRI.",
+	"Mo", "Molybdenum", "95.95", 6, 5, "[Kr] 4d5 5s1", 2.16, "2623 °C", "4639 °C", "139 pm", "684 kJ/mol", "Nóng chảy ở nhiệt độ rất cao. Dùng làm thép hợp kim bền và xúc tác lọc dầu.",
+	"Tc", "Technetium", "98", 7, 5, "[Kr] 4d5 5s2", 1.9, "2157 °C", "4265 °C", "136 pm", "702 kJ/mol", "Nguyên tố đầu tiên được tạo ra nhân tạo. Đồng vị Tc-99m dùng nhiều trong chẩn đoán y học hạt nhân.",
+	"Ru", "Ruthenium", "101.07", 8, 5, "[Kr] 4d7 5s1", 2.2, "2334 °C", "4150 °C", "134 pm", "710 kJ/mol", "Kim loại họ platin. Dùng làm tiếp điểm điện cứng và chất xúc tác.",
+	"Rh", "Rhodium", "102.91", 9, 5, "[Kr] 4d8 5s1", 2.28, "1964 °C", "3695 °C", "134 pm", "720 kJ/mol", "Kim loại quý hiếm. Dùng trong bộ xúc tác khí thải ô tô và mạ đồ trang sức.",
+	"Pd", "Palladium", "106.42", 10, 5, "[Kr] 4d10", 2.20, "1554.9 °C", "2963 °C", "137 pm", "804 kJ/mol", "Hấp thụ nhiều hiđro. Dùng trong bộ xúc tác khí thải, điện tử và nha khoa.",
+	"Ag", "Silver", "107.87", 11, 5, "[Kr] 4d10 5s1", 1.93, "961.8 °C", "2162 °C", "144 pm", "731 kJ/mol", "Dẫn điện và nhiệt tốt nhất trong các kim loại. Dùng làm trang sức, gương và tiếp điểm điện.",
+	"Cd", "Cadmium", "112.41", 12, 5, "[Kr] 4d10 5s2", 1.69, "321.1 °C", "767 °C", "151 pm", "868 kJ/mol", "Kim loại độc. Dùng trong pin Ni-Cd và mạ kim loại, nay bị hạn chế vì độc tính.",
+	"In", "Indium", "114.82", 13, 5, "[Kr] 4d10 5s2 5p1", 1.78, "156.6 °C", "2072 °C", "167 pm", "558 kJ/mol", "Kim loại mềm. Hợp chất ITO tạo lớp dẫn điện trong suốt cho màn hình cảm ứng.",
+	"Sn", "Tin", "118.71", 14, 5, "[Kr] 4d10 5s2 5p2", 1.96, "231.9 °C", "2602 °C", "140 pm", "709 kJ/mol", "Dùng mạ hộp thiếc, làm thiếc hàn và đồng thanh.",
+	"Sb", "Antimony", "121.76", 15, 5, "[Kr] 4d10 5s2 5p3", 2.05, "630.6 °C", "1587 °C", "140 pm", "834 kJ/mol", "Dùng làm hợp kim cứng với chì, chất chống cháy và chất bán dẫn.",
+	"Te", "Tellurium", "127.6", 16, 5, "[Kr] 4d10 5s2 5p4", 2.1, "449.5 °C", "988 °C", "142 pm", "869 kJ/mol", "Dùng trong pin mặt trời CdTe và vật liệu nhiệt điện.",
+	"I", "Iodine", "126.9", 17, 5, "[Kr] 4d10 5s2 5p5", 2.66, "113.7 °C", "184.3 °C", "133 pm", "1008 kJ/mol", "Cần cho hormone tuyến giáp. Dùng khử trùng và bổ sung vào muối iot.",
+	"Xe", "Xenon", "131.29", 18, 5, "[Kr] 4d10 5s2 5p6", 2.6, "-111.8 °C", "-108.1 °C", "108 pm", "1170 kJ/mol", "Khí hiếm nặng. Dùng trong đèn pha xenon và động cơ ion của tàu vũ trụ.",
+	"Cs", "Caesium", "132.91", 1, 6, "[Xe] 6s1", 0.79, "28.4 °C", "671 °C", "265 pm", "376 kJ/mol", "Kim loại mềm, phản ứng cực mạnh. Dao động của nguyên tử xesi dùng để định nghĩa giây trong đồng hồ nguyên tử.",
+	"Ba", "Barium", "137.33", 2, 6, "[Xe] 6s2", 0.89, "727 °C", "1845 °C", "222 pm", "503 kJ/mol", "Bari sunfat dùng làm chất cản quang khi chụp X-quang; cho ngọn lửa màu lục trong pháo hoa.",
+	"La", "Lanthanum", "138.91", 4, 9, "[Xe] 5d1 6s2", 1.10, "920 °C", "3464 °C", "187 pm", "538 kJ/mol", "Dùng trong ống kính máy ảnh, pin NiMH và xúc tác lọc dầu.",
+	"Ce", "Cerium", "140.12", 5, 9, "[Xe] 4f1 5d1 6s2", 1.12, "795 °C", "3443 °C", "182 pm", "534 kJ/mol", "Nguyên tố đất hiếm dồi dào nhất. Dùng đánh bóng kính và làm đá lửa bật lửa.",
+	"Pr", "Praseodymium", "140.91", 6, 9, "[Xe] 4f3 6s2", 1.13, "935 °C", "3520 °C", "183 pm", "527 kJ/mol", "Tạo màu vàng lục cho thủy tinh và gốm; có trong nam châm đất hiếm.",
+	"Nd", "Neodymium", "144.24", 7, 9, "[Xe] 4f4 6s2", 1.14, "1024 °C", "3074 °C", "182 pm", "533 kJ/mol", "Tạo ra loại nam châm mạnh nhất (NdFeB), dùng trong động cơ điện và tai nghe.",
+	"Pm", "Promethium", "145", 8, 9, "[Xe] 4f5 6s2", 1.13, "1042 °C", "3000 °C", "181 pm", "540 kJ/mol", "Phóng xạ, không có đồng vị bền. Dùng trong pin hạt nhân nhỏ và sơn phát sáng.",
+	"Sm", "Samarium", "150.36", 9, 9, "[Xe] 4f6 6s2", 1.17, "1072 °C", "1794 °C", "180 pm", "545 kJ/mol", "Dùng làm nam châm samari-coban chịu nhiệt cao và thanh điều khiển lò phản ứng.",
+	"Eu", "Europium", "151.96", 10, 9, "[Xe] 4f7 6s2", 1.2, "826 °C", "1529 °C", "180 pm", "547 kJ/mol", "Phát quang đỏ và xanh. Dùng trong màn hình, đèn huỳnh quang và mực chống giả trên tiền euro.",
+	"Gd", "Gadolinium", "157.25", 11, 9, "[Xe] 4f7 5d1 6s2", 1.2, "1312 °C", "3273 °C", "180 pm", "593 kJ/mol", "Từ tính mạnh. Dùng làm thuốc cản quang khi chụp MRI và hấp thụ neutron.",
+	"Tb", "Terbium", "158.93", 12, 9, "[Xe] 4f9 6s2", 1.1, "1356 °C", "3230 °C", "177 pm", "566 kJ/mol", "Phát sáng màu lục, dùng trong đèn huỳnh quang và màn hình.",
+	"Dy", "Dysprosium", "162.5", 13, 9, "[Xe] 4f10 6s2", 1.22, "1407 °C", "2567 °C", "178 pm", "573 kJ/mol", "Thêm vào nam châm NdFeB để chịu nhiệt tốt hơn; dùng trong tuabin gió và xe điện.",
+	"Ho", "Holmium", "164.93", 14, 9, "[Xe] 4f11 6s2", 1.23, "1461 °C", "2720 °C", "176 pm", "581 kJ/mol", "Có từ tính mạnh nhất trong các nguyên tố. Dùng trong laze y học và nam châm.",
+	"Er", "Erbium", "167.26", 15, 9, "[Xe] 4f12 6s2", 1.24, "1529 °C", "2868 °C", "175 pm", "589 kJ/mol", "Dùng trong bộ khuếch đại cáp quang và laze; tạo màu hồng cho thủy tinh.",
+	"Tm", "Thulium", "168.93", 16, 9, "[Xe] 4f13 6s2", 1.25, "1545 °C", "1950 °C", "174 pm", "597 kJ/mol", "Dùng trong laze y tế và thiết bị X-quang xách tay.",
+	"Yb", "Ytterbium", "173.05", 17, 9, "[Xe] 4f14 6s2", 1.1, "824 °C", "1196 °C", "194 pm", "603 kJ/mol", "Dùng trong đồng hồ nguyên tử quang học và laze sợi quang.",
+	"Lu", "Lutetium", "174.97", 18, 9, "[Xe] 4f14 5d1 6s2", 1.27, "1652 °C", "3402 °C", "174 pm", "524 kJ/mol", "Hiếm và đắt. Dùng trong máy chụp PET và chất xúc tác lọc dầu.",
+	"Hf", "Hafnium", "178.49", 4, 6, "[Xe] 4f14 5d2 6s2", 1.3, "2233 °C", "4603 °C", "159 pm", "659 kJ/mol", "Hấp thụ neutron tốt, dùng làm thanh điều khiển lò hạt nhân và trong chip vi xử lý.",
+	"Ta", "Tantalum", "180.95", 5, 6, "[Xe] 4f14 5d3 6s2", 1.5, "3017 °C", "5458 °C", "146 pm", "761 kJ/mol", "Rất bền với ăn mòn. Dùng trong tụ điện của điện thoại và dụng cụ phẫu thuật.",
+	"W", "Tungsten", "183.84", 6, 6, "[Xe] 4f14 5d4 6s2", 2.36, "3422 °C", "5555 °C", "139 pm", "770 kJ/mol", "Có nhiệt độ nóng chảy cao nhất trong các kim loại. Dùng làm dây tóc bóng đèn và mũi khoan.",
+	"Re", "Rhenium", "186.21", 7, 6, "[Xe] 4f14 5d5 6s2", 1.9, "3186 °C", "5596 °C", "137 pm", "760 kJ/mol", "Một trong những kim loại nóng chảy cao nhất. Dùng trong động cơ phản lực và xúc tác.",
+	"Os", "Osmium", "190.23", 8, 6, "[Xe] 4f14 5d6 6s2", 2.2, "3033 °C", "5012 °C", "135 pm", "840 kJ/mol", "Một trong hai nguyên tố đặc nhất. Dùng làm hợp kim rất cứng, ngòi bút và tiếp điểm.",
+	"Ir", "Iridium", "192.22", 9, 6, "[Xe] 4f14 5d7 6s2", 2.20, "2446 °C", "4428 °C", "136 pm", "880 kJ/mol", "Rất bền ăn mòn. Dùng trong bugi cao cấp; hợp kim platin-iridi từng làm chuẩn mét và kilôgam.",
+	"Pt", "Platinum", "195.08", 10, 6, "[Xe] 4f14 5d9 6s1", 2.28, "1768.3 °C", "3825 °C", "139 pm", "870 kJ/mol", "Kim loại quý, bền hóa học. Dùng làm trang sức, xúc tác khí thải và thuốc chống ung thư cisplatin.",
+	"Au", "Gold", "196.97", 11, 6, "[Xe] 4f14 5d10 6s1", 2.54, "1064.2 °C", "2856 °C", "144 pm", "890 kJ/mol", "Kim loại quý màu vàng, không gỉ. Dùng làm trang sức, dự trữ giá trị và linh kiện điện tử.",
+	"Hg", "Mercury", "200.59", 12, 6, "[Xe] 4f14 5d10 6s2", 2.00, "-38.83 °C", "356.7 °C", "151 pm", "1007 kJ/mol", "Kim loại duy nhất ở thể lỏng ở nhiệt độ phòng. Từng dùng trong nhiệt kế; rất độc.",
+	"Tl", "Thallium", "204.38", 13, 6, "[Xe] 4f14 5d10 6s2 6p1", 1.62, "304 °C", "1473 °C", "170 pm", "589 kJ/mol", "Kim loại mềm và rất độc. Dùng trong bộ dò hồng ngoại và một số thiết bị chẩn đoán tim.",
+	"Pb", "Lead", "207.2", 14, 6, "[Xe] 4f14 5d10 6s2 6p2", 2.33, "327.5 °C", "1749 °C", "175 pm", "716 kJ/mol", "Nặng, mềm và độc. Dùng trong ắc quy axit-chì và làm tấm chắn bức xạ.",
+	"Bi", "Bismuth", "208.98", 15, 6, "[Xe] 4f14 5d10 6s2 6p3", 2.02, "271.4 °C", "1564 °C", "155 pm", "703 kJ/mol", "Ít độc hơn các kim loại nặng khác. Dùng trong thuốc dạ dày và hợp kim nóng chảy ở nhiệt độ thấp.",
+	"Po", "Polonium", "209", 16, 6, "[Xe] 4f14 5d10 6s2 6p4", 2.0, "254 °C", "962 °C", "167 pm", "812 kJ/mol", "Phóng xạ rất mạnh. Marie Curie đặt tên theo quê hương Ba Lan của bà.",
+	"At", "Astatine", "210", 17, 6, "[Xe] 4f14 5d10 6s2 6p5", 2.2, "302 °C", "337 °C", "150 pm", "899 kJ/mol", "Nguyên tố tự nhiên hiếm nhất, phóng xạ. Đang được nghiên cứu cho điều trị ung thư.",
+	"Rn", "Radon", "222", 18, 6, "[Xe] 4f14 5d10 6s2 6p6", 2.2, "-71 °C", "-61.7 °C", "120 pm", "1037 kJ/mol", "Khí phóng xạ sinh ra từ sự phân rã của urani. Tích tụ trong nhà kín là nguy cơ gây ung thư phổi.",
+	"Fr", "Francium", "223", 1, 7, "[Rn] 7s1", 0.7, "27 °C", "677 °C", "—", "380 kJ/mol", "Kim loại kiềm cực hiếm và phóng xạ; đồng vị bền nhất chỉ có chu kỳ bán rã khoảng 22 phút.",
+	"Ra", "Radium", "226", 2, 7, "[Rn] 7s2", 0.9, "700 °C", "1737 °C", "223 pm", "509 kJ/mol", "Phóng xạ. Từng dùng làm sơn dạ quang và trong xạ trị.",
+	"Ac", "Actinium", "227", 4, 10, "[Rn] 6d1 7s2", 1.1, "1050 °C", "3200 °C", "188 pm", "499 kJ/mol", "Phóng xạ, phát ánh sáng xanh trong bóng tối. Dùng trong nghiên cứu y học hạt nhân.",
+	"Th", "Thorium", "232.04", 5, 10, "[Rn] 6d2 7s2", 1.3, "1750 °C", "4788 °C", "180 pm", "587 kJ/mol", "Phóng xạ yếu, dồi dào hơn urani. Được nghiên cứu làm nhiên liệu hạt nhân.",
+	"Pa", "Protactinium", "231.04", 6, 10, "[Rn] 5f2 6d1 7s2", 1.5, "1568 °C", "4027 °C", "161 pm", "568 kJ/mol", "Phóng xạ, rất hiếm. Chủ yếu dùng trong nghiên cứu khoa học.",
+	"U", "Uranium", "238.03", 7, 10, "[Rn] 5f3 6d1 7s2", 1.38, "1132 °C", "4131 °C", "156 pm", "598 kJ/mol", "Nhiên liệu của lò phản ứng hạt nhân; đồng vị U-235 có thể phân hạch.",
+	"Np", "Neptunium", "237", 8, 10, "[Rn] 5f4 6d1 7s2", 1.36, "644 °C", "3902 °C", "155 pm", "605 kJ/mol", "Nguyên tố siêu urani đầu tiên được tổng hợp, đặt tên theo hành tinh Hải Vương (Neptune).",
+	"Pu", "Plutonium", "244", 9, 10, "[Rn] 5f6 7s2", 1.28, "640 °C", "3228 °C", "159 pm", "585 kJ/mol", "Dùng trong vũ khí hạt nhân và trong pin hạt nhân cho tàu thăm dò vũ trụ.",
+	"Am", "Americium", "243", 10, 10, "[Rn] 5f7 7s2", 1.3, "1176 °C", "2011 °C", "173 pm", "578 kJ/mol", "Có trong đầu báo khói ion hóa gia dụng (Am-241).",
+	"Cm", "Curium", "247", 11, 10, "[Rn] 5f7 6d1 7s2", 1.3, "1340 °C", "3110 °C", "174 pm", "581 kJ/mol", "Phóng xạ mạnh. Dùng trong máy phân tích APXS trên xe tự hành thăm dò sao Hỏa.",
+	"Bk", "Berkelium", "247", 12, 10, "[Rn] 5f9 7s2", 1.3, "986 °C", "2627 °C", "170 pm", "601 kJ/mol", "Tổng hợp nhân tạo. Dùng làm bia để tổng hợp các nguyên tố nặng hơn.",
+	"Cf", "Californium", "251", 13, 10, "[Rn] 5f10 7s2", 1.3, "900 °C", "1470 °C", "186 pm", "608 kJ/mol", "Phát ra neutron mạnh. Dùng khởi động lò phản ứng và trong thăm dò dầu khí.",
+	"Es", "Einsteinium", "252", 14, 10, "[Rn] 5f11 7s2", 1.3, "860 °C", "996 °C", "186 pm", "619 kJ/mol", "Chỉ tổng hợp được lượng rất nhỏ. Đặt theo Albert Einstein.",
+	"Fm", "Fermium", "257", 15, 10, "[Rn] 5f12 7s2", 1.3, "1527 °C", "—", "—", "627 kJ/mol", "Chỉ tạo ra được lượng cực nhỏ. Đặt theo Enrico Fermi.",
+	"Md", "Mendelevium", "258", 16, 10, "[Rn] 5f13 7s2", 1.3, "827 °C", "—", "—", "635 kJ/mol", "Đặt theo Dmitri Mendeleev, người xây dựng bảng tuần hoàn.",
+	"No", "Nobelium", "259", 17, 10, "[Rn] 5f14 7s2", 1.3, "827 °C", "—", "—", "642 kJ/mol", "Mỗi lần chỉ tạo được vài nguyên tử. Đặt theo Alfred Nobel.",
+	"Lr", "Lawrencium", "266", 18, 10, "[Rn] 5f14 7s2 7p1", 1.3, "1627 °C", "—", "—", "470 kJ/mol", "Nguyên tố cuối của họ actini; chỉ nghiên cứu được trên vài nguyên tử.",
+	"Rf", "Rutherfordium", "267", 4, 7, "[Rn] 5f14 6d2 7s2", null, "—", "—", "—", "580 kJ/mol", "Nguyên tố siêu nặng, chỉ tổng hợp nhân tạo và tồn tại rất ngắn. Đặt theo Ernest Rutherford.",
+	"Db", "Dubnium", "268", 5, 7, "[Rn] 5f14 6d3 7s2", null, "—", "—", "—", "—", "Nguyên tố siêu nặng, tổng hợp nhân tạo. Đặt theo thị trấn Dubna của Nga.",
+	"Sg", "Seaborgium", "269", 6, 7, "[Rn] 5f14 6d4 7s2", null, "—", "—", "—", "—", "Nguyên tố siêu nặng, tổng hợp nhân tạo. Đặt theo Glenn Seaborg.",
+	"Bh", "Bohrium", "270", 7, 7, "[Rn] 5f14 6d5 7s2", null, "—", "—", "—", "—", "Nguyên tố siêu nặng, tổng hợp nhân tạo. Đặt theo Niels Bohr.",
+	"Hs", "Hassium", "277", 8, 7, "[Rn] 5f14 6d6 7s2", null, "—", "—", "—", "—", "Nguyên tố siêu nặng, tổng hợp nhân tạo. Đặt theo bang Hessen của Đức.",
+	"Mt", "Meitnerium", "278", 9, 7, "[Rn] 5f14 6d7 7s2", null, "—", "—", "—", "—", "Nguyên tố siêu nặng, tổng hợp nhân tạo. Đặt theo nhà vật lý Lise Meitner.",
+	"Ds", "Darmstadtium", "281", 10, 7, "[Rn] 5f14 6d8 7s2", null, "—", "—", "—", "—", "Nguyên tố siêu nặng, tổng hợp nhân tạo. Đặt theo thành phố Darmstadt của Đức.",
+	"Rg", "Roentgenium", "282", 11, 7, "[Rn] 5f14 6d9 7s2", null, "—", "—", "—", "—", "Nguyên tố siêu nặng, tổng hợp nhân tạo. Đặt theo Wilhelm Röntgen, người phát hiện tia X.",
+	"Cn", "Copernicium", "285", 12, 7, "[Rn] 5f14 6d10 7s2", null, "—", "—", "—", "—", "Nguyên tố siêu nặng, tổng hợp nhân tạo. Đặt theo Nicolaus Copernicus.",
+	"Uut", "Ununtrium", "284", 13, 7, "[Rn] 5f14 6d10 7s2 7p1", null, "—", "—", "—", "—", "Nguyên tố siêu nặng, tổng hợp nhân tạo, sau này được đặt tên là Nihonium (Nh).",
+	"Fl", "Flerovium", "289", 14, 7, "[Rn] 5f14 6d10 7s2 7p2", null, "—", "—", "—", "—", "Nguyên tố siêu nặng, tổng hợp nhân tạo. Đặt theo Phòng thí nghiệm Flerov ở Dubna.",
+	"Uup", "Ununpentium", "288", 15, 7, "[Rn] 5f14 6d10 7s2 7p3", null, "—", "—", "—", "—", "Nguyên tố siêu nặng, tổng hợp nhân tạo, sau này được đặt tên là Moscovium (Mc).",
+	"Lv", "Livermorium", "293", 16, 7, "[Rn] 5f14 6d10 7s2 7p4", null, "—", "—", "—", "—", "Nguyên tố siêu nặng, tổng hợp nhân tạo. Đặt theo Phòng thí nghiệm Lawrence Livermore.",
+	"Uus", "Ununseptium", "294", 17, 7, "[Rn] 5f14 6d10 7s2 7p5", null, "—", "—", "—", "—", "Nguyên tố siêu nặng, tổng hợp nhân tạo, sau này được đặt tên là Tennessine (Ts).",
+	"Uuo", "Ununoctium", "294", 18, 7, "[Rn] 5f14 6d10 7s2 7p6", null, "—", "—", "—", "—", "Nguyên tố nặng nhất đã biết, tổng hợp nhân tạo. Sau này được đặt tên là Oganesson (Og)."
 ];
 
 var nameVi = {
 	"Hydrogen":"Hydro","Helium":"Heli","Lithium":"Liti","Beryllium":"Beri","Boron":"Bo","Carbon":"Cacbon",
 	"Nitrogen":"Nitơ","Oxygen":"Oxy","Fluorine":"Flo","Neon":"Neon","Sodium":"Natri","Magnesium":"Magie",
-	"Aluminium":"Nhôm","Silicon":"Silic","Phosphorus":"Photpho","Sulfur":"Lưu huỳnh","Chlorine":"Clo","Argon":"Argon",
+	"Aluminium":"Nhôm","Silicon":"Silic","Phosphorus":"Photpho","Sulfur":"Lưu huỳnh","Chlorine":"Clo","Argon":"Agon",
 	"Potassium":"Kali","Calcium":"Canxi","Scandium":"Scandi","Titanium":"Titan","Vanadium":"Vanadi","Chromium":"Crom",
 	"Manganese":"Mangan","Iron":"Sắt","Cobalt":"Coban","Nickel":"Niken","Copper":"Đồng","Zinc":"Kẽm",
-	"Gallium":"Gali","Germanium":"Germani","Arsenic":"Asen","Selenium":"Selen","Bromine":"Brom","Krypton":"Kripton",
-	"Rubidium":"Rubidi","Strontium":"Stronti","Yttrium":"Ytri","Zirconium":"Zirconi","Niobium":"Niobi","Molybdenum":"Molypden",
-	"Technetium":"Techneti","Ruthenium":"Rutheni","Rhodium":"Rhodi","Palladium":"Paladi","Silver":"Bạc","Cadmium":"Cadimi",
-	"Indium":"Indi","Tin":"Thiếc","Antimony":"Antimon","Tellurium":"Telua","Iodine":"Iot","Xenon":"Xenon",
-	"Caesium":"Xesi","Barium":"Bari","Lanthanum":"Lantan","Cerium":"Xeri","Praseodymium":"Praseodym","Neodymium":"Neodym",
-	"Promethium":"Promethi","Samarium":"Samari","Europium":"Europi","Gadolinium":"Gadolini","Terbium":"Terbi","Dysprosium":"Dysprosi",
-	"Holmium":"Holmi","Erbium":"Erbi","Thulium":"Thuli","Ytterbium":"Ytterbi","Lutetium":"Luteti","Hafnium":"Hafni",
-	"Tantalum":"Tantan","Tungsten":"Vonfram","Rhenium":"Rheni","Osmium":"Osmi","Iridium":"Iridi","Platinum":"Bạch kim",
+	"Gallium":"Gali","Germanium":"Gecmani","Arsenic":"Asen","Selenium":"Selen","Bromine":"Brom","Krypton":"Kripton",
+	"Rubidium":"Rubidi","Strontium":"Stronti","Yttrium":"Ytri","Zirconium":"Zirconi","Niobium":"Niobi","Molybdenum":"Molipden",
+	"Technetium":"Tecneti","Ruthenium":"Rutheni","Rhodium":"Rodi","Palladium":"Paladi","Silver":"Bạc","Cadmium":"Cadimi",
+	"Indium":"Indi","Tin":"Thiếc","Antimony":"Antimon","Tellurium":"Telu","Iodine":"Iot","Xenon":"Xenon",
+	"Caesium":"Xesi","Barium":"Bari","Lanthanum":"Lantan","Cerium":"Xeri","Praseodymium":"Praseodymi","Neodymium":"Neodymi",
+	"Promethium":"Prometi","Samarium":"Samari","Europium":"Europi","Gadolinium":"Gadolini","Terbium":"Tecbi","Dysprosium":"Dysprosi",
+	"Holmium":"Honmi","Erbium":"Eribi","Thulium":"Tuli","Ytterbium":"Ytecbi","Lutetium":"Luteti","Hafnium":"Hafni",
+	"Tantalum":"Tantan","Tungsten":"Vonfram","Rhenium":"Reni","Osmium":"Osmi","Iridium":"Iridi","Platinum":"Platin",
 	"Gold":"Vàng","Mercury":"Thủy ngân","Thallium":"Tali","Lead":"Chì","Bismuth":"Bitmut","Polonium":"Poloni",
-	"Astatine":"Astatin","Radon":"Radon","Francium":"Franxi","Radium":"Rađi","Actinium":"Actini","Thorium":"Thori",
+	"Astatine":"Astatin","Radon":"Radon","Francium":"Franxi","Radium":"Radi","Actinium":"Actini","Thorium":"Thori",
 	"Protactinium":"Protactini","Uranium":"Urani","Neptunium":"Neptuni","Plutonium":"Plutoni","Americium":"Americi",
-	"Curium":"Curi","Berkelium":"Berkeli","Californium":"Californi","Einstenium":"Einsteini","Fermium":"Fermi",
-	"Mendelevium":"Mendelevi","Nobelium":"Nobeli","Lawrencium":"Lawrenci","Rutherfordium":"Rutherfordi","Dubnium":"Dubni",
-	"Seaborgium":"Seaborgi","Bohrium":"Bohri","Hassium":"Hassi","Meitnerium":"Meitneri","Darmstadium":"Darmstadti",
-	"Roentgenium":"Roentgeni","Copernicium":"Copernici","Ununtrium":"Ununtri","Flerovium":"Flerovi",
+	"Curium":"Curi","Berkelium":"Berkeli","Californium":"Californi","Einsteinium":"Einsteini","Fermium":"Fermi",
+	"Mendelevium":"Mendelevi","Nobelium":"Nobeli","Lawrencium":"Lorenxi","Rutherfordium":"Rutherfordi","Dubnium":"Dubni",
+	"Seaborgium":"Seabogi","Bohrium":"Bohri","Hassium":"Hassi","Meitnerium":"Meitneri","Darmstadtium":"Darmstadti",
+	"Roentgenium":"Rơnghen","Copernicium":"Copernixi","Ununtrium":"Ununtri","Flerovium":"Flerovi",
 	"Ununpentium":"Ununpenti","Livermorium":"Livermori","Ununseptium":"Ununsepti","Ununoctium":"Ununocti"
 };
 
@@ -1290,125 +1290,13 @@ var groupRoman = {
 	13: "IIIA", 14: "IVA", 15: "VA", 16: "VIA", 17: "VIIA", 18: "VIIIA"
 };
 
-var elementExtra = {
-	"H":   { melt: "-259.16 °C", boil: "-252.87 °C", val: "-1, +1", en: "2.20", config: "1s¹", radius: "53 pm", ie: "1312 kJ/mol" },
-	"He":  { melt: "-272.20 °C", boil: "-268.93 °C", val: "0", en: "—", config: "1s²", radius: "31 pm", ie: "2372 kJ/mol" },
-	"Li":  { melt: "180.54 °C", boil: "1342 °C", val: "+1", en: "0.98", config: "[He] 2s¹", radius: "152 pm", ie: "520 kJ/mol" },
-	"Be":  { melt: "1287 °C", boil: "2469 °C", val: "+2", en: "1.57", config: "[He] 2s²", radius: "112 pm", ie: "899 kJ/mol" },
-	"B":   { melt: "2076 °C", boil: "3927 °C", val: "+3", en: "2.04", config: "[He] 2s² 2p¹", radius: "87 pm", ie: "801 kJ/mol" },
-	"C":   { melt: "3550 °C", boil: "4027 °C", val: "-4, +2, +4", en: "2.55", config: "[He] 2s² 2p²", radius: "67 pm", ie: "1086 kJ/mol" },
-	"N":   { melt: "-210.0 °C", boil: "-195.79 °C", val: "-3, +3, +5", en: "3.04", config: "[He] 2s² 2p³", radius: "56 pm", ie: "1402 kJ/mol" },
-	"O":   { melt: "-218.79 °C", boil: "-182.96 °C", val: "-2", en: "3.44", config: "[He] 2s² 2p⁴", radius: "48 pm", ie: "1314 kJ/mol" },
-	"F":   { melt: "-219.67 °C", boil: "-188.11 °C", val: "-1", en: "3.98", config: "[He] 2s² 2p⁵", radius: "42 pm", ie: "1681 kJ/mol" },
-	"Ne":  { melt: "-248.59 °C", boil: "-246.08 °C", val: "0", en: "—", config: "[He] 2s² 2p⁶", radius: "38 pm", ie: "2081 kJ/mol" },
-	"Na":  { melt: "97.79 °C", boil: "883 °C", val: "+1", en: "0.93", config: "[Ne] 3s¹", radius: "186 pm", ie: "496 kJ/mol" },
-	"Mg":  { melt: "650 °C", boil: "1090 °C", val: "+2", en: "1.31", config: "[Ne] 3s²", radius: "160 pm", ie: "738 kJ/mol" },
-	"Al":  { melt: "660.32 °C", boil: "2519 °C", val: "+3", en: "1.61", config: "[Ne] 3s² 3p¹", radius: "143 pm", ie: "578 kJ/mol" },
-	"Si":  { melt: "1414 °C", boil: "3265 °C", val: "-4, +4", en: "1.90", config: "[Ne] 3s² 3p²", radius: "117 pm", ie: "786 kJ/mol" },
-	"P":   { melt: "44.15 °C", boil: "280.5 °C", val: "-3, +3, +5", en: "2.19", config: "[Ne] 3s² 3p³", radius: "110 pm", ie: "1012 kJ/mol" },
-	"S":   { melt: "115.21 °C", boil: "444.60 °C", val: "-2, +4, +6", en: "2.58", config: "[Ne] 3s² 3p⁴", radius: "104 pm", ie: "1000 kJ/mol" },
-	"Cl":  { melt: "-101.5 °C", boil: "-34.04 °C", val: "-1, +1, +3, +5, +7", en: "3.16", config: "[Ne] 3s² 3p⁵", radius: "99 pm", ie: "1251 kJ/mol" },
-	"Ar":  { melt: "-189.34 °C", boil: "-185.85 °C", val: "0", en: "—", config: "[Ne] 3s² 3p⁶", radius: "71 pm", ie: "1521 kJ/mol" },
-	"K":   { melt: "63.38 °C", boil: "759 °C", val: "+1", en: "0.82", config: "[Ar] 4s¹", radius: "227 pm", ie: "419 kJ/mol" },
-	"Ca":  { melt: "842 °C", boil: "1484 °C", val: "+2", en: "1.00", config: "[Ar] 4s²", radius: "197 pm", ie: "590 kJ/mol" },
-	"Sc":  { melt: "1541 °C", boil: "2830 °C", val: "+3", en: "1.36", config: "[Ar] 3d¹ 4s²", radius: "162 pm", ie: "633 kJ/mol" },
-	"Ti":  { melt: "1668 °C", boil: "3287 °C", val: "+2, +3, +4", en: "1.54", config: "[Ar] 3d² 4s²", radius: "147 pm", ie: "659 kJ/mol" },
-	"V":   { melt: "1910 °C", boil: "3407 °C", val: "+2, +3, +4, +5", en: "1.63", config: "[Ar] 3d³ 4s²", radius: "134 pm", ie: "651 kJ/mol" },
-	"Cr":  { melt: "1907 °C", boil: "2671 °C", val: "+2, +3, +6", en: "1.66", config: "[Ar] 3d⁵ 4s¹", radius: "128 pm", ie: "653 kJ/mol" },
-	"Mn":  { melt: "1246 °C", boil: "2061 °C", val: "+2, +4, +7", en: "1.55", config: "[Ar] 3d⁵ 4s²", radius: "127 pm", ie: "717 kJ/mol" },
-	"Fe":  { melt: "1538 °C", boil: "2861 °C", val: "+2, +3", en: "1.83", config: "[Ar] 3d⁶ 4s²", radius: "126 pm", ie: "762 kJ/mol" },
-	"Co":  { melt: "1495 °C", boil: "2927 °C", val: "+2, +3", en: "1.88", config: "[Ar] 3d⁷ 4s²", radius: "125 pm", ie: "760 kJ/mol" },
-	"Ni":  { melt: "1455 °C", boil: "2913 °C", val: "+2, +3", en: "1.91", config: "[Ar] 3d⁸ 4s²", radius: "124 pm", ie: "737 kJ/mol" },
-	"Cu":  { melt: "1084.62 °C", boil: "2562 °C", val: "+1, +2", en: "1.90", config: "[Ar] 3d¹⁰ 4s¹", radius: "128 pm", ie: "745 kJ/mol" },
-	"Zn":  { melt: "419.53 °C", boil: "907 °C", val: "+2", en: "1.65", config: "[Ar] 3d¹⁰ 4s²", radius: "134 pm", ie: "906 kJ/mol" },
-	"Ga":  { melt: "29.76 °C", boil: "2204 °C", val: "+3", en: "1.81", config: "[Ar] 3d¹⁰ 4s² 4p¹", radius: "135 pm", ie: "579 kJ/mol" },
-	"Ge":  { melt: "938.25 °C", boil: "2833 °C", val: "-4, +2, +4", en: "2.01", config: "[Ar] 3d¹⁰ 4s² 4p²", radius: "122 pm", ie: "762 kJ/mol" },
-	"As":  { melt: "817 °C", boil: "614 °C", val: "-3, +3, +5", en: "2.18", config: "[Ar] 3d¹⁰ 4s² 4p³", radius: "120 pm", ie: "947 kJ/mol" },
-	"Se":  { melt: "221 °C", boil: "685 °C", val: "-2, +4, +6", en: "2.55", config: "[Ar] 3d¹⁰ 4s² 4p⁴", radius: "119 pm", ie: "941 kJ/mol" },
-	"Br":  { melt: "-7.2 °C", boil: "58.8 °C", val: "-1, +1, +5, +7", en: "2.96", config: "[Ar] 3d¹⁰ 4s² 4p⁵", radius: "114 pm", ie: "1140 kJ/mol" },
-	"Kr":  { melt: "-157.37 °C", boil: "-153.22 °C", val: "0", en: "3.00", config: "[Ar] 3d¹⁰ 4s² 4p⁶", radius: "88 pm", ie: "1351 kJ/mol" },
-	"Rb":  { melt: "39.30 °C", boil: "688 °C", val: "+1", en: "0.82", config: "[Kr] 5s¹", radius: "248 pm", ie: "403 kJ/mol" },
-	"Sr":  { melt: "777 °C", boil: "1382 °C", val: "+2", en: "0.95", config: "[Kr] 5s²", radius: "215 pm", ie: "549 kJ/mol" },
-	"Y":   { melt: "1526 °C", boil: "3345 °C", val: "+3", en: "1.22", config: "[Kr] 4d¹ 5s²", radius: "180 pm", ie: "600 kJ/mol" },
-	"Zr":  { melt: "1855 °C", boil: "4409 °C", val: "+4", en: "1.33", config: "[Kr] 4d² 5s²", radius: "160 pm", ie: "640 kJ/mol" },
-	"Nb":  { melt: "2477 °C", boil: "4744 °C", val: "+3, +5", en: "1.60", config: "[Kr] 4d⁴ 5s¹", radius: "146 pm", ie: "652 kJ/mol" },
-	"Mo":  { melt: "2623 °C", boil: "4639 °C", val: "+2, +4, +6", en: "2.16", config: "[Kr] 4d⁵ 5s¹", radius: "139 pm", ie: "684 kJ/mol" },
-	"Tc":  { melt: "2157 °C", boil: "4265 °C", val: "+4, +7", en: "1.90", config: "[Kr] 4d⁵ 5s²", radius: "136 pm", ie: "702 kJ/mol" },
-	"Ru":  { melt: "2334 °C", boil: "4150 °C", val: "+3, +4", en: "2.20", config: "[Kr] 4d⁷ 5s¹", radius: "134 pm", ie: "710 kJ/mol" },
-	"Rh":  { melt: "1964 °C", boil: "3695 °C", val: "+3", en: "2.28", config: "[Kr] 4d⁸ 5s¹", radius: "134 pm", ie: "720 kJ/mol" },
-	"Pd":  { melt: "1554.9 °C", boil: "2963 °C", val: "+2, +4", en: "2.20", config: "[Kr] 4d¹⁰", radius: "137 pm", ie: "804 kJ/mol" },
-	"Ag":  { melt: "961.78 °C", boil: "2162 °C", val: "+1", en: "1.93", config: "[Kr] 4d¹⁰ 5s¹", radius: "144 pm", ie: "731 kJ/mol" },
-	"Cd":  { melt: "321.07 °C", boil: "767 °C", val: "+2", en: "1.69", config: "[Kr] 4d¹⁰ 5s²", radius: "151 pm", ie: "868 kJ/mol" },
-	"In":  { melt: "156.6 °C", boil: "2072 °C", val: "+3", en: "1.78", config: "[Kr] 4d¹⁰ 5s² 5p¹", radius: "167 pm", ie: "558 kJ/mol" },
-	"Sn":  { melt: "231.93 °C", boil: "2602 °C", val: "+2, +4", en: "1.96", config: "[Kr] 4d¹⁰ 5s² 5p²", radius: "140 pm", ie: "709 kJ/mol" },
-	"Sb":  { melt: "630.63 °C", boil: "1587 °C", val: "-3, +3, +5", en: "2.05", config: "[Kr] 4d¹⁰ 5s² 5p³", radius: "140 pm", ie: "834 kJ/mol" },
-	"Te":  { melt: "449.51 °C", boil: "988 °C", val: "-2, +4, +6", en: "2.10", config: "[Kr] 4d¹⁰ 5s² 5p⁴", radius: "142 pm", ie: "869 kJ/mol" },
-	"I":   { melt: "113.7 °C", boil: "184.3 °C", val: "-1, +1, +5, +7", en: "2.66", config: "[Kr] 4d¹⁰ 5s² 5p⁵", radius: "133 pm", ie: "1008 kJ/mol" },
-	"Xe":  { melt: "-111.75 °C", boil: "-108.12 °C", val: "0", en: "2.60", config: "[Kr] 4d¹⁰ 5s² 5p⁶", radius: "108 pm", ie: "1170 kJ/mol" },
-	"Cs":  { melt: "28.44 °C", boil: "671 °C", val: "+1", en: "0.79", config: "[Xe] 6s¹", radius: "265 pm", ie: "376 kJ/mol" },
-	"Ba":  { melt: "727 °C", boil: "1897 °C", val: "+2", en: "0.89", config: "[Xe] 6s²", radius: "222 pm", ie: "503 kJ/mol" },
-	"La":  { melt: "920 °C", boil: "3464 °C", val: "+3", en: "1.10", config: "[Xe] 5d¹ 6s²", radius: "187 pm", ie: "538 kJ/mol" },
-	"Ce":  { melt: "795 °C", boil: "3443 °C", val: "+3, +4", en: "1.12", config: "[Xe] 4f¹ 5d¹ 6s²", radius: "182 pm", ie: "534 kJ/mol" },
-	"Pr":  { melt: "935 °C", boil: "3520 °C", val: "+3", en: "1.13", config: "[Xe] 4f³ 6s²", radius: "183 pm", ie: "527 kJ/mol" },
-	"Nd":  { melt: "1024 °C", boil: "3074 °C", val: "+3", en: "1.14", config: "[Xe] 4f⁴ 6s²", radius: "182 pm", ie: "533 kJ/mol" },
-	"Pm":  { melt: "1042 °C", boil: "3000 °C", val: "+3", en: "1.13", config: "[Xe] 4f⁵ 6s²", radius: "181 pm", ie: "540 kJ/mol" },
-	"Sm":  { melt: "1072 °C", boil: "1794 °C", val: "+2, +3", en: "1.17", config: "[Xe] 4f⁶ 6s²", radius: "180 pm", ie: "545 kJ/mol" },
-	"Eu":  { melt: "826 °C", boil: "1529 °C", val: "+2, +3", en: "1.20", config: "[Xe] 4f⁷ 6s²", radius: "180 pm", ie: "547 kJ/mol" },
-	"Gd":  { melt: "1312 °C", boil: "3273 °C", val: "+3", en: "1.20", config: "[Xe] 4f⁷ 5d¹ 6s²", radius: "180 pm", ie: "593 kJ/mol" },
-	"Tb":  { melt: "1356 °C", boil: "3230 °C", val: "+3", en: "1.20", config: "[Xe] 4f⁹ 6s²", radius: "177 pm", ie: "566 kJ/mol" },
-	"Dy":  { melt: "1412 °C", boil: "2567 °C", val: "+3", en: "1.22", config: "[Xe] 4f¹⁰ 6s²", radius: "178 pm", ie: "573 kJ/mol" },
-	"Ho":  { melt: "1474 °C", boil: "2700 °C", val: "+3", en: "1.23", config: "[Xe] 4f¹¹ 6s²", radius: "176 pm", ie: "581 kJ/mol" },
-	"Er":  { melt: "1529 °C", boil: "2868 °C", val: "+3", en: "1.24", config: "[Xe] 4f¹² 6s²", radius: "175 pm", ie: "589 kJ/mol" },
-	"Tm":  { melt: "1545 °C", boil: "1950 °C", val: "+3", en: "1.25", config: "[Xe] 4f¹³ 6s²", radius: "174 pm", ie: "597 kJ/mol" },
-	"Yb":  { melt: "824 °C", boil: "1196 °C", val: "+2, +3", en: "1.10", config: "[Xe] 4f¹⁴ 6s²", radius: "194 pm", ie: "603 kJ/mol" },
-	"Lu":  { melt: "1663 °C", boil: "3402 °C", val: "+3", en: "1.27", config: "[Xe] 4f¹⁴ 5d¹ 6s²", radius: "174 pm", ie: "524 kJ/mol" },
-	"Hf":  { melt: "2233 °C", boil: "4603 °C", val: "+4", en: "1.30", config: "[Xe] 4f¹⁴ 5d² 6s²", radius: "159 pm", ie: "659 kJ/mol" },
-	"Ta":  { melt: "3017 °C", boil: "5458 °C", val: "+5", en: "1.50", config: "[Xe] 4f¹⁴ 5d³ 6s²", radius: "146 pm", ie: "761 kJ/mol" },
-	"W":   { melt: "3422 °C", boil: "5555 °C", val: "+2, +4, +6", en: "2.36", config: "[Xe] 4f¹⁴ 5d⁴ 6s²", radius: "139 pm", ie: "770 kJ/mol" },
-	"Re":  { melt: "3186 °C", boil: "5596 °C", val: "+4, +7", en: "1.90", config: "[Xe] 4f¹⁴ 5d⁵ 6s²", radius: "137 pm", ie: "760 kJ/mol" },
-	"Os":  { melt: "3033 °C", boil: "5012 °C", val: "+4, +8", en: "2.20", config: "[Xe] 4f¹⁴ 5d⁶ 6s²", radius: "135 pm", ie: "840 kJ/mol" },
-	"Ir":  { melt: "2466 °C", boil: "4428 °C", val: "+3, +4", en: "2.20", config: "[Xe] 4f¹⁴ 5d⁷ 6s²", radius: "136 pm", ie: "880 kJ/mol" },
-	"Pt":  { melt: "1768.3 °C", boil: "3825 °C", val: "+2, +4", en: "2.28", config: "[Xe] 4f¹⁴ 5d⁹ 6s¹", radius: "139 pm", ie: "870 kJ/mol" },
-	"Au":  { melt: "1064.18 °C", boil: "2856 °C", val: "+1, +3", en: "2.54", config: "[Xe] 4f¹⁴ 5d¹⁰ 6s¹", radius: "144 pm", ie: "890 kJ/mol" },
-	"Hg":  { melt: "-38.83 °C", boil: "356.73 °C", val: "+1, +2", en: "2.00", config: "[Xe] 4f¹⁴ 5d¹⁰ 6s²", radius: "151 pm", ie: "1007 kJ/mol" },
-	"Tl":  { melt: "304 °C", boil: "1473 °C", val: "+1, +3", en: "1.62", config: "[Xe] 4f¹⁴ 5d¹⁰ 6s² 6p¹", radius: "170 pm", ie: "589 kJ/mol" },
-	"Pb":  { melt: "327.46 °C", boil: "1749 °C", val: "+2, +4", en: "2.33", config: "[Xe] 4f¹⁴ 5d¹⁰ 6s² 6p²", radius: "175 pm", ie: "716 kJ/mol" },
-	"Bi":  { melt: "271.40 °C", boil: "1564 °C", val: "+3, +5", en: "2.02", config: "[Xe] 4f¹⁴ 5d¹⁰ 6s² 6p³", radius: "155 pm", ie: "703 kJ/mol" },
-	"Po":  { melt: "254 °C", boil: "962 °C", val: "-2, +2, +4", en: "2.00", config: "[Xe] 4f¹⁴ 5d¹⁰ 6s² 6p⁴", radius: "167 pm", ie: "812 kJ/mol" },
-	"At":  { melt: "302 °C", boil: "337 °C", val: "-1, +1", en: "2.20", config: "[Xe] 4f¹⁴ 5d¹⁰ 6s² 6p⁵", radius: "150 pm", ie: "899 kJ/mol" },
-	"Rn":  { melt: "-71 °C", boil: "-61.7 °C", val: "0", en: "2.20", config: "[Xe] 4f¹⁴ 5d¹⁰ 6s² 6p⁶", radius: "120 pm", ie: "1037 kJ/mol" },
-	"Fr":  { melt: "27 °C", boil: "677 °C", val: "+1", en: "0.70", config: "[Rn] 7s¹", radius: "—", ie: "380 kJ/mol" },
-	"Ra":  { melt: "700 °C", boil: "1737 °C", val: "+2", en: "0.90", config: "[Rn] 7s²", radius: "223 pm", ie: "509 kJ/mol" },
-	"Ac":  { melt: "1050 °C", boil: "3200 °C", val: "+3", en: "1.10", config: "[Rn] 6d¹ 7s²", radius: "188 pm", ie: "499 kJ/mol" },
-	"Th":  { melt: "1750 °C", boil: "4788 °C", val: "+4", en: "1.30", config: "[Rn] 6d² 7s²", radius: "180 pm", ie: "587 kJ/mol" },
-	"Pa":  { melt: "1568 °C", boil: "4027 °C", val: "+4, +5", en: "1.50", config: "[Rn] 5f² 6d¹ 7s²", radius: "161 pm", ie: "568 kJ/mol" },
-	"U":   { melt: "1132.2 °C", boil: "4131 °C", val: "+3, +4, +5, +6", en: "1.38", config: "[Rn] 5f³ 6d¹ 7s²", radius: "156 pm", ie: "598 kJ/mol" },
-	"Np":  { melt: "644 °C", boil: "3902 °C", val: "+3, +4, +5, +6, +7", en: "1.36", config: "[Rn] 5f⁴ 6d¹ 7s²", radius: "155 pm", ie: "605 kJ/mol" },
-	"Pu":  { melt: "639.4 °C", boil: "3228 °C", val: "+3, +4, +5, +6", en: "1.28", config: "[Rn] 5f⁶ 7s²", radius: "159 pm", ie: "585 kJ/mol" },
-	"Am":  { melt: "1176 °C", boil: "2011 °C", val: "+3, +4, +5, +6", en: "1.30", config: "[Rn] 5f⁷ 7s²", radius: "173 pm", ie: "578 kJ/mol" },
-	"Cm":  { melt: "1340 °C", boil: "3110 °C", val: "+3, +4", en: "1.30", config: "[Rn] 5f⁷ 6d¹ 7s²", radius: "174 pm", ie: "581 kJ/mol" },
-	"Bk":  { melt: "986 °C", boil: "2627 °C", val: "+3, +4", en: "1.30", config: "[Rn] 5f⁹ 7s²", radius: "170 pm", ie: "601 kJ/mol" },
-	"Cf":  { melt: "900 °C", boil: "1470 °C", val: "+3, +4", en: "1.30", config: "[Rn] 5f¹⁰ 7s²", radius: "186 pm", ie: "608 kJ/mol" },
-	"Es":  { melt: "860 °C", boil: "996 °C", val: "+3", en: "1.30", config: "[Rn] 5f¹¹ 7s²", radius: "186 pm", ie: "619 kJ/mol" },
-	"Fm":  { melt: "1527 °C", boil: "—", val: "+3", en: "1.30", config: "[Rn] 5f¹² 7s²", radius: "—", ie: "627 kJ/mol" },
-	"Md":  { melt: "827 °C", boil: "—", val: "+2, +3", en: "1.30", config: "[Rn] 5f¹³ 7s²", radius: "—", ie: "635 kJ/mol" },
-	"No":  { melt: "827 °C", boil: "—", val: "+2, +3", en: "1.30", config: "[Rn] 5f¹⁴ 7s²", radius: "—", ie: "642 kJ/mol" },
-	"Lr":  { melt: "1627 °C", boil: "—", val: "+3", en: "1.30", config: "[Rn] 5f¹⁴ 7s² 7p¹", radius: "—", ie: "470 kJ/mol" },
-	"Rf":  { melt: "2100 °C", boil: "5500 °C", val: "+4", en: "—", config: "[Rn] 5f¹⁴ 6d² 7s²", radius: "—", ie: "580 kJ/mol" },
-	"Db":  { melt: "—", boil: "—", val: "+5", en: "—", config: "[Rn] 5f¹⁴ 6d³ 7s²", radius: "—", ie: "—" },
-	"Sg":  { melt: "—", boil: "—", val: "+6", en: "—", config: "[Rn] 5f¹⁴ 6d⁴ 7s²", radius: "—", ie: "—" },
-	"Bh":  { melt: "—", boil: "—", val: "+7", en: "—", config: "[Rn] 5f¹⁴ 6d⁵ 7s²", radius: "—", ie: "—" },
-	"Hs":  { melt: "—", boil: "—", val: "+8", en: "—", config: "[Rn] 5f¹⁴ 6d⁶ 7s²", radius: "—", ie: "—" },
-	"Mt":  { melt: "—", boil: "—", val: "—", en: "—", config: "[Rn] 5f¹⁴ 6d⁷ 7s²", radius: "—", ie: "—" },
-	"Ds":  { melt: "—", boil: "—", val: "—", en: "—", config: "[Rn] 5f¹⁴ 6d⁸ 7s²", radius: "—", ie: "—" },
-	"Rg":  { melt: "—", boil: "—", val: "—", en: "—", config: "[Rn] 5f¹⁴ 6d⁹ 7s²", radius: "—", ie: "—" },
-	"Cn":  { melt: "—", boil: "—", val: "+2", en: "—", config: "[Rn] 5f¹⁴ 6d¹⁰ 7s²", radius: "—", ie: "—" },
-	"Uut": { melt: "—", boil: "—", val: "—", en: "—", config: "[Rn] 5f¹⁴ 6d¹⁰ 7s² 7p¹", radius: "—", ie: "—" },
-	"Fl":  { melt: "—", boil: "—", val: "—", en: "—", config: "[Rn] 5f¹⁴ 6d¹⁰ 7s² 7p²", radius: "—", ie: "—" },
-	"Uup": { melt: "—", boil: "—", val: "—", en: "—", config: "[Rn] 5f¹⁴ 6d¹⁰ 7s² 7p³", radius: "—", ie: "—" },
-	"Lv":  { melt: "—", boil: "—", val: "—", en: "—", config: "[Rn] 5f¹⁴ 6d¹⁰ 7s² 7p⁴", radius: "—", ie: "—" },
-	"Uus": { melt: "—", boil: "—", val: "—", en: "—", config: "[Rn] 5f¹⁴ 6d¹⁰ 7s² 7p⁵", radius: "—", ie: "—" },
-	"Uuo": { melt: "—", boil: "—", val: "—", en: "—", config: "[Rn] 5f¹⁴ 6d¹⁰ 7s² 7p⁶", radius: "—", ie: "—" }
+var NOBLE_CORE = {
+	"He": [2],
+	"Ne": [2, 8],
+	"Ar": [2, 8, 8],
+	"Kr": [2, 8, 18, 8],
+	"Xe": [2, 8, 18, 18, 8],
+	"Rn": [2, 8, 18, 32, 18, 8]
 };
 
 var camera, scene, renderer;
@@ -1427,9 +1315,9 @@ function init() {
 
 	scene = new THREE.Scene();
 
-	for ( var i = 0; i < table.length; i += 5 ) {
+	for ( var i = 0; i < table.length; i += 12 ) {
 
-		var idx = i / 5;
+		var idx = i / 12;
 		var cat = elementCategories[ idx ];
 
 		var element = document.createElement( 'div' );
@@ -1463,8 +1351,14 @@ function init() {
 			mass: table[ i + 2 ],
 			group: table[ i + 3 ],
 			period: table[ i + 4 ],
-			category: cat,
-			extra: elementExtra[ table[ i ] ] || null
+			config: table[ i + 5 ],
+			en: table[ i + 6 ],
+			melt: table[ i + 7 ],
+			boil: table[ i + 8 ],
+			radius: table[ i + 9 ],
+			ie: table[ i + 10 ],
+			note: table[ i + 11 ],
+			category: cat
 		} );
 
 		var object = new THREE.CSS3DObject( element );
@@ -1580,28 +1474,102 @@ function init() {
 
 }
 
+function shellsFromConfig( config ) {
+
+	var shells = [];
+
+	var tokens = config.split( ' ' );
+
+	for ( var t = 0; t < tokens.length; t ++ ) {
+
+		var tok = tokens[ t ];
+		var coreMatch = tok.match( /^\[(\w+)\]$/ );
+
+		if ( coreMatch ) {
+			shells = NOBLE_CORE[ coreMatch[ 1 ] ].slice();
+			continue;
+		}
+
+		var m = tok.match( /^(\d)([spdf])(\d+)$/ );
+
+		if ( m ) {
+			var n = parseInt( m[ 1 ], 10 ) - 1;
+			var cnt = parseInt( m[ 3 ], 10 );
+			shells[ n ] = ( shells[ n ] || 0 ) + cnt;
+		}
+
+	}
+
+	return shells.map( function( v ) { return v || 0; } );
+
+}
+
+function drawBohr( symbol, z, config, color ) {
+
+	var shells = shellsFromConfig( config );
+	var n = shells.length;
+	var step = n > 1 ? Math.min( 13, ( 88 - 22 ) / ( n - 1 ) ) : 0;
+
+	var svg = '<svg viewBox="-100 -100 200 200" xmlns="http://www.w3.org/2000/svg">';
+
+	for ( var i = 0; i < n; i ++ ) {
+
+		var r = 22 + i * step;
+		svg += '<circle class="bohr-ring" r="' + r.toFixed( 1 ) + '"/>';
+
+		var cnt = shells[ i ];
+		var dots = '';
+
+		for ( var k = 0; k < cnt; k ++ ) {
+			var a = 2 * Math.PI * k / cnt + i * 0.6;
+			dots += '<circle class="bohr-dot" cx="' + ( r * Math.cos( a ) ).toFixed( 2 ) + '" cy="' + ( r * Math.sin( a ) ).toFixed( 2 ) + '" r="2.4"/>';
+		}
+
+		var dur = ( 14 + i * 6 );
+		var dir = ( i % 2 === 0 ) ? 1 : -1;
+		var anim = '<animateTransform attributeName="transform" type="rotate" from="0 0 0" to="' + ( dir * 360 ) + ' 0 0" dur="' + dur + 's" repeatCount="indefinite"/>';
+
+		svg += '<g>' + dots + anim + '</g>';
+
+	}
+
+	svg += '<circle class="bohr-core" r="12"/>';
+	svg += '<text>' + z + '+</text>';
+	svg += '</svg>';
+
+	var cap = '<div class="bohr-cap">' + shells.join( ' · ' ) + '</div>';
+
+	return svg + cap;
+
+}
+
 function showPopup( data ) {
 
 	document.getElementById( 'popup-symbol' ).textContent = data.symbol;
-	document.getElementById( 'popup-name' ).textContent = data.name + ' (' + data.latin + ')';
+	document.getElementById( 'popup-name' ).textContent = data.name;
+	document.getElementById( 'popup-latin' ).textContent = data.latin;
 	document.getElementById( 'popup-mass' ).textContent = data.mass + ' amu';
 
 	var groupText = groupRoman[ data.group ] || data.group;
 	document.getElementById( 'popup-group' ).textContent = groupText;
 	document.getElementById( 'popup-period' ).textContent = data.period;
+	document.getElementById( 'popup-number' ).textContent = data.number;
+	document.getElementById( 'popup-config' ).textContent = data.config;
+	document.getElementById( 'popup-en' ).textContent = data.en === null ? '—' : data.en;
+	document.getElementById( 'popup-melt' ).textContent = data.melt;
+	document.getElementById( 'popup-boil' ).textContent = data.boil;
+	document.getElementById( 'popup-radius' ).textContent = data.radius;
+	document.getElementById( 'popup-ie' ).textContent = data.ie;
+	document.getElementById( 'popup-val' ).textContent = '—';
 
 	var catBadge = document.getElementById( 'popup-category' );
 	catBadge.textContent = categoryNames[ data.category ];
 	catBadge.style.backgroundColor = categoryColors[ data.category ];
 
-	var ex = data.extra || { melt: '—', boil: '—', val: '—', en: '—', config: '—', radius: '—', ie: '—' };
-	document.getElementById( 'popup-melt' ).textContent = ex.melt;
-	document.getElementById( 'popup-boil' ).textContent = ex.boil;
-	document.getElementById( 'popup-val' ).textContent = ex.val;
-	document.getElementById( 'popup-en' ).textContent = ex.en;
-	document.getElementById( 'popup-config' ).textContent = ex.config;
-	document.getElementById( 'popup-radius' ).textContent = ex.radius;
-	document.getElementById( 'popup-ie' ).textContent = ex.ie;
+	var color = categoryColors[ data.category ];
+	document.getElementById( 'popup-bohr' ).innerHTML = drawBohr( data.symbol, data.number, data.config, color );
+
+	document.getElementById( 'popup-note' ).textContent = data.note;
 
 	document.getElementById( 'popup' ).classList.add( 'show' );
 
