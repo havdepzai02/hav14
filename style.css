@@ -122,6 +122,8 @@ body {
 		text-shadow: 0 0 6px rgba(0,0,0,0.9);
 	}
 
+/* ============ POPUP ============ */
+
 #popup {
 	position: fixed;
 	top: 0;
@@ -145,11 +147,12 @@ body {
 }
 
 #popup-card {
-	width: 720px;
+	width: 820px;
 	max-width: 94vw;
+	max-height: 92vh;
+	overflow-y: auto;
 	background: #ffffff;
 	border-radius: 10px;
-	overflow: hidden;
 	position: relative;
 	box-shadow: 0 30px 80px rgba(0, 0, 0, 0.75);
 	animation: popIn 0.25s ease;
@@ -190,9 +193,16 @@ body {
 	line-height: 1.2;
 }
 
+#popup-latin {
+	font-size: 14px;
+	color: #5a7a8a;
+	font-style: italic;
+	margin-top: 2px;
+}
+
 #popup-category {
 	display: inline-block;
-	margin-top: 6px;
+	margin-top: 8px;
 	font-size: 11px;
 	font-weight: 700;
 	padding: 4px 12px;
@@ -201,37 +211,67 @@ body {
 	letter-spacing: 0.5px;
 }
 
-#popup-body {
+#popup-main {
 	display: grid;
-	grid-template-columns: 1fr 1fr;
-	padding: 22px 26px 26px;
+	grid-template-columns: 260px 1fr;
+	gap: 20px;
+	padding: 20px 26px;
 }
 
-.popup-col {
-	padding-right: 22px;
+#popup-bohr {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
 }
 
-.popup-col + .popup-col {
-	padding-left: 22px;
-	padding-right: 0;
-	border-left: 1px solid #e5eaee;
+#popup-bohr svg {
+	width: 100%;
+	max-width: 240px;
+	height: auto;
+	display: block;
 }
 
-.popup-col-title {
-	font-size: 11px;
-	font-weight: 700;
-	color: #2c7fb8;
-	letter-spacing: 1px;
-	margin-bottom: 14px;
-	padding-bottom: 8px;
-	border-bottom: 1px solid #e5eaee;
+#popup-bohr .bohr-ring {
+	fill: none;
+	stroke: #c9dfe8;
+	stroke-width: 1;
+}
+
+#popup-bohr .bohr-dot {
+	fill: #2c7fb8;
+}
+
+#popup-bohr .bohr-core {
+	fill: #d9ecf5;
+	stroke: #2c7fb8;
+	stroke-width: 1.2;
+}
+
+#popup-bohr text {
+	fill: #1c3a4a;
+	font: 600 9px Helvetica, sans-serif;
+	text-anchor: middle;
+	dominant-baseline: central;
+}
+
+#popup-bohr .bohr-cap {
+	font: 500 12px monospace;
+	color: #5a7a8a;
+	text-align: center;
+	margin-top: 8px;
+}
+
+#popup-facts {
+	display: flex;
+	flex-direction: column;
 }
 
 .popup-row {
 	display: flex;
 	justify-content: space-between;
 	align-items: baseline;
-	padding: 8px 0;
+	padding: 7px 0;
 	font-size: 13px;
 	border-bottom: 1px dashed #eef2f5;
 }
@@ -247,6 +287,15 @@ body {
 .popup-row b {
 	color: #1c3a4a;
 	font-weight: 700;
+}
+
+#popup-note {
+	padding: 14px 26px 22px;
+	font-size: 13.5px;
+	line-height: 1.55;
+	color: #3a4a56;
+	border-top: 1px solid #eef2f5;
+	background: #f8fbfc;
 }
 
 #popup-close {
